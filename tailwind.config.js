@@ -12,6 +12,9 @@ export default {
             bg: "FFFEF5",
         },
         extend: {
+            fontFamily: {
+                nunito: ["'Nunito Sans'", "sans-serif"],
+            },
             backgroundImage: {
                 gradientMain: "linear-gradient(90deg, #FFDF00 0%, #FDCC0D 100%)",
                 gradientMain2: "linear-gradient(90deg, #FDCC0D 0%, #FF9529 100%)",
