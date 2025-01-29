@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;800&display=swap');
 
-@tailwind base;
-@tailwind components;
 @tailwind utilities;
 
 body {
-    font-family: 'Nunito Sans', sans-serif;
-  }
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
+.normal_btn {
+  background: var(--Light-Gradiant, linear-gradient(90deg, #FFDF00 0%, #FDCC0D 100%));
+  cursor: pointer;
+
+}
+
+.normal_btn:hover {
+  background: var(--Dark-Gradiant, linear-gradient(90deg, #FDCC0D 0%, #FF9529 100%));
+  transition: ease-in-out;
+  transition-delay: 3s;
+  cursor: pointer;
+}
