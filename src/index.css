@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;800&display=swap');
 
-@tailwind utilities;
+@import "tailwindcss";
 
 body {
   font-family: 'Nunito Sans', sans-serif;
 }
-
 
 .normal_btn {
   background: var(--Light-Gradiant, linear-gradient(90deg, #FFDF00 0%, #FDCC0D 100%));

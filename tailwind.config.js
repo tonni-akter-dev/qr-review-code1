@@ -5,13 +5,14 @@ export default {
         "./src/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
-        color: {
-            darkT: "#222222",
-            grayT: "#A0A0A0",
-            borderGrayC: "#E5E5E5",
-            bg: "FFFEF5",
-        },
         extend: {
+            colors: {
+                darkT: "#222222",
+                grayT: "#A0A0A0",
+                borderGrayC: "#E5E5E5",
+                bg: "FFFEF5",
+                gray_A0: '#A0A0A0'
+            },
             fontFamily: {
                 nunito: ["'Nunito Sans'", "sans-serif"],
             },
