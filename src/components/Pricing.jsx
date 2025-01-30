@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { CheckmarkCircle02Icon, CrownIcon, StarIcon, ZapIcon } from "hugeicons-react";
 
 const pricingData = [

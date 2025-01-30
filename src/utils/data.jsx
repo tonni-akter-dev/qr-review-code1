@@ -152,3 +152,27 @@ export const benefitsData = [
         image: BHB03
     }
 ];
+
+export const faqData = [
+    {
+      question: 'What are Smart QR Codes for reviews?',
+      answer: 'Smart QR Codes for reviews are customized QR codes that redirect customers to review platforms or feedback forms, streamlining the process to collect insights and improve ratings.'
+    },
+    {
+      question: 'Can you review the QR code and provide feedback?',
+      answer: 'Yes, I can review the QR code and provide feedback. Please share the QR code with me.'
+    },
+    {
+      question: 'Are Smart QR Codes customizable for branding?',
+      answer: 'Yes, Smart QR Codes can be customized for branding. You can usually add your logo, change the colors, and customize the frame around the QR code.'
+    },
+    {
+      question: 'Can QR Codes integrate with review platforms?',
+      answer: 'Yes, QR Codes can integrate with review platforms. When a customer scans the QR code, they can be taken directly to the review platform to leave a review.'
+    },
+    {
+      question: 'Are Smart QR Codes mobile-friendly?',
+      answer: 'Yes, Smart QR Codes are designed to be mobile-friendly. When a customer scans the QR code with their smartphone, they will be taken to a mobile-optimized page.'
+    }
+  ];
+  
