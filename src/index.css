@@ -35,3 +35,15 @@ body {
 .shadow_custom {
   box-shadow: 0px 6px 36px 0px rgba(40, 35, 0, 0.05);
 }
+
+.grad_text {
+  background: var(--Dark-Gradiant, linear-gradient(90deg, #FDCC0D 0%, #FF9529 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer_sent {
+  border-radius: 100px;
+  background: var(--Light-Gradiant, linear-gradient(90deg, #FFDF00 0%, #FDCC0D 100%));
+}

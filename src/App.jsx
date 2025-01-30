@@ -5,6 +5,7 @@ import Buisness from './components/Buisness'
 import Contact from './components/Contact'
 import CustomerFeedback from './components/CustomerFeedback'
 import { Faq } from './components/Faq'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import Pricing from './components/Pricing'
 import Reviews from './components/Reviews'
@@ -21,6 +22,7 @@ function App() {
       <Faq />
       <Contact />
       <Brands />
+      <Footer/>
     </div>
   )
 }
