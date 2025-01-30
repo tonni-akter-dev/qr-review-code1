@@ -5,7 +5,7 @@ import reviews from '../assets/reviews.png'
 const Reviews = () => {
     return (
         <div>
-            <div className="lg:mt-[100px] mt-20 max-w-[1400px] lg:px-[120px] px-5 py-[25px] mx-auto">
+            <div className="lg:mt-[100px] mt-20 max-w-[1400px] lg:px-[120px] px-5 mx-auto">
                 <div className="flex lg:flex-row flex-col items-center lg:gap-[65px]">
                     <div className='lg:hidden flex flex-col justify-center items-center text-center'>
                         <h2 className=" text-2xl font-extrabold text-[#222] mb-4">

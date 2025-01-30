@@ -25,7 +25,6 @@ const Header = () => {
             />
             :
             <img src={menu} alt="" />}
-
         </button>
         <nav className="flex items-center gap-[56px] bg-white">
           <ul className="lg:flex hidden space-x-10 text-lg py-[2.5] font-medium text-black ">

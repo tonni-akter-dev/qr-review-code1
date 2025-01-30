@@ -1,4 +1,5 @@
 import './App.css'
+import Buisness from './components/Buisness'
 import CustomerFeedback from './components/CustomerFeedback'
 import Header from './components/Header'
 import Reviews from './components/Reviews'
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <CustomerFeedback />
       <Reviews />
+      <Buisness />
     </div>
   )
 }
