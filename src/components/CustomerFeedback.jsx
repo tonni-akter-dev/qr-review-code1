@@ -1,9 +1,22 @@
+import { superchargeData } from "../utils/data"
+
 const CustomerFeedback = () => {
     return (
-        <div className='mt-[94px] max-w-[1400px] px-[120px] py-[25px] mx-auto'>
+        <div className='lg:mt-[94px] mt-20 max-w-[1400px] lg:px-[120px] px-5 py-[25px] mx-auto'>
             <div>
-                <h2 className="text-darkT  text-[46px] font-extrabold leading-normal text-center mb-4">Supercharge Your Customer Feedback Today!</h2>
-                <p className="text-gray_A0 mb-[56px] text-lg  text-center text-e">Inspiring success through innovative solutions.</p>
+                <h2 className="text-primary  lg:text-[46px] text-2xl font-extrabold leading-normal text-center mb-4">Supercharge Your Customer Feedback Today!</h2>
+                <p className="text-[#A0A0A0] mb-[56px] lg:text-lg text-sm  text-center">Inspiring success through innovative solutions.</p>
+                <div className="grid lg:grid-cols-4 grid-cols-2 gap-6">
+                    {superchargeData.map((item, index) => (
+                        <div key={index} className="lg:p-6 p-4 rounded-[20px]" style={{ backgroundColor: item.bg_color }}>
+                            <div className={`bg-${item.icon_bg} mx-auto p-5 w-fit rounded-full mb-6`} style={{ backgroundColor: item.icon_bg }}>
+                                {item.icon()}
+                            </div>
+                            <h3 className="text-[#222] lg:text-[22px] text-sm font-bold text-center mb-4 lg:whitespace-nowrap leading-[24px]">{item.title}</h3>
+                            <p className="text-[#A0A0A0] lg:text-base text-xs text-center">{item.description}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     )
