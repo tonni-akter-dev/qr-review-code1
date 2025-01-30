@@ -1,51 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { CheckmarkCircle02Icon, CrownIcon, StarIcon, ZapIcon } from "hugeicons-react";
-
-const pricingData = [
-    {
-        title: "Gold",
-        price: "$23",
-        description: "Ideal for startups and beginners.",
-        features: [
-            "Up to 10 reviews per month",
-            "Basic QR code generation",
-            "Our Number With Com.Bot Branding",
-            // "Our Number With Com.Bot Branding",
-            "Simple analytics",
-            "Email support",
-        ],
-        isRecommended: false,
-    },
-    {
-        title: "Platinum",
-        price: "$100",
-        description: "Ideal for growing businesses",
-        features: [
-            "Up to 100 reviews per month",
-            "Custom branded QR codes",
-            "Your Number With Com.Bot Branding",
-            "Detailed analytics",
-            "Custom reward system",
-        ],
-        isRecommended: true,
-    },
-    {
-        title: "Custom",
-        price: "",
-        description: "For businesses that want to scale",
-        features: [
-            "Up to 10,000 reviews per month",
-            "Your Number, No Com.Bot Branding",
-            "Premium QR customization",
-            "Advanced analytics & reporting",
-            "API & Webhook access",
-            "Dedicated account manager",
-            "Custom Reward System",
-            "5 QR Stickers",
-        ],
-        isRecommended: false,
-    },
-];
+import { pricingData } from "../utils/data";
 
 const Pricing = () => {
     return (
@@ -72,6 +27,7 @@ const Pricing = () => {
 export default Pricing
 
 
+// eslint-disable-next-line react/prop-types
 const PricingCard = ({ title, price, description, features, isRecommended }) => {
     return (
         <div className={`bg-white rounded-3xl shadow-md pt-[31px] pb-[37px] ps-[51px] pe-[34px] flex flex-col  justify-between `} style={{ boxShadow: ' 0px 6px 36px 0px rgba(40, 35, 0, 0.05)' }}>

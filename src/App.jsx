@@ -1,5 +1,6 @@
 import './App.css'
 import Benefits from './components/Benefits'
+import Brands from './components/Brands'
 import Buisness from './components/Buisness'
 import Contact from './components/Contact'
 import CustomerFeedback from './components/CustomerFeedback'
@@ -19,6 +20,7 @@ function App() {
       <Pricing />
       <Faq />
       <Contact />
+      <Brands />
     </div>
   )
 }
