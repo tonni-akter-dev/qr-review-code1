@@ -33,7 +33,6 @@ const Reviews = () => {
                                 customers to share their positive experiences instantly.
                             </p>
                         </div>
-
                         {/* Features List */}
                         <div className='lg:mt-0 mt-6'>
                             {/* Feature 1: Scan & Chat */}
