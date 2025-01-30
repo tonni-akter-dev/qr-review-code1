@@ -1,14 +1,26 @@
 import {
     ChartLineData02Icon,
     CrownIcon,
+    GraduationScrollIcon,
+    Hospital02Icon,
     LaptopPhoneSyncIcon,
     QrCodeIcon,
+    RepairIcon,
+    Restaurant01Icon,
     Settings02Icon,
     Shield01Icon,
+    SparklesIcon,
     StarIcon,
+    Store01Icon,
+    TravelBagIcon,
     WhatsappIcon,
 
 } from "hugeicons-react";
+
+
+import BHB01 from '../assets/BHB011.png';
+import BHB02 from '../assets/BHB022.png';
+import BHB03 from '../assets/BHB033.png';
 
 export const superchargeData = [
     {
@@ -68,4 +80,75 @@ export const superchargeData = [
         icon_bg: "#8E4DF2"
     }
 
+];
+
+export const buisnessData = [
+    {
+        title: "Restaurants & Cafés",
+        bg_color: "#F6EFFE",
+        icon: (size) => <Restaurant01Icon size={size} color={"#FFFFFF"} variant={"stroke"} />,
+        icon_bg: "#9351F2"
+    },
+    {
+        title: "Educational Institutions",
+        bg_color: "#E9FBEF",
+        icon: (size) => <GraduationScrollIcon size={size} color={"#FFFFFF"} variant={"stroke"} />,
+        icon_bg: "#12B2A8"
+    },
+    {
+        title: "Hotels & Resorts",
+        bg_color: "#FDFAE2",
+        icon: (size) => <StarIcon size={size} color={"#FFFFFF"} variant={"stroke"} />,
+        icon_bg: "#F4C313"
+    },
+    {
+        title: "Medical Services",
+        bg_color: "#EBF3FF",
+        icon: (size) => <Hospital02Icon size={size} color={"#FFFFFF"} variant={"stroke"} />,
+        icon_bg: "#377CF4"
+    },
+    {
+        title: "Beauty, Salon, Wellness ",
+        bg_color: "#FCECF4",
+        icon: (size) => <SparklesIcon size={size} color={"#FFFFFF"} variant={"stroke"} />,
+        icon_bg: "#E73576"
+    },
+    {
+        title: "Travel & Tourism Agencies",
+        bg_color: "#E5F9F6",
+        icon: (size) => <TravelBagIcon size={size} color={"#FFFFFF"} variant={"stroke"} />,
+        icon_bg: "#1DBC60"
+    },
+    {
+        title: "IT & Repair Services",
+        bg_color: "#FEF3E8",
+        icon: (size) => <RepairIcon size={size} color={"#FFFFFF"} variant={"stroke"} />,
+        icon_bg: "#F46619"
+    },
+    {
+        title: "Retail Stores",
+        bg_color: "#E6F2FF",
+        icon: (size) => <Store01Icon size={size} color={"#FFFFFF"} variant={"stroke"} />,
+        icon_bg: "#8D53F4"
+    }
+
+];
+
+
+export const benefitsData = [
+    {
+        title: "Increase Reviews",
+        description: "Encourage guests to leave positive reviews.",
+        image: BHB01
+    },
+    {
+        title: "Collect User Data",
+        description: "Gather valuable customer <br/> information.",
+        image: BHB02
+    },
+    {
+        title: "Retarget",
+        description: "Reach out to customers during off-peak times to boost business.",
+        image: BHB03
+    }
 ];

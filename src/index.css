@@ -11,11 +11,22 @@ body {
 .normal_btn {
   background: var(--Light-Gradiant, linear-gradient(90deg, #FFDF00 0%, #FDCC0D 100%));
   cursor: pointer;
+}
 
+.normal_btn1 {
+  background: var(--Dark-Gradiant, linear-gradient(90deg, #FDCC0D 0%, #FF9529 100%));
+  cursor: pointer;
 }
 
 .normal_btn:hover {
   background: var(--Dark-Gradiant, linear-gradient(90deg, #FDCC0D 0%, #FF9529 100%));
+  transition: ease-in-out;
+  transition-delay: 3s;
+  cursor: pointer;
+}
+
+.normal_btn1:hover {
+  background: var(--Light-Gradiant, linear-gradient(90deg, #FFDF00 0%, #FDCC0D 100%));
   transition: ease-in-out;
   transition-delay: 3s;
   cursor: pointer;

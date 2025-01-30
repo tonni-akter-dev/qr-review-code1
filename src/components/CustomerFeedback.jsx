@@ -9,13 +9,12 @@ const CustomerFeedback = () => {
         const handleResize = () => {
             setIconSize(window.innerWidth < 768 ? 27 : 40);
         };
-
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
-
+    
     return (
-        <div className='lg:mt-[94px] mt-20 max-w-[1400px] lg:px-[120px] px-5 py-[25px] mx-auto'>
+        <div className='lg:mt-[94px] mt-20 max-w-[1400px] lg:px-[120px] px-5 mx-auto'>
             <div>
                 <h2 className="text-primary  lg:text-[46px] text-2xl font-extrabold leading-normal text-center mb-4">Supercharge Your Customer Feedback Today!</h2>
                 <p className="text-[#A0A0A0] mb-[56px] lg:text-lg text-sm  text-center">Inspiring success through innovative solutions.</p>
@@ -33,7 +32,7 @@ const CustomerFeedback = () => {
                     ))}
                 </div>
 
-                <div className="flex justify-center">  
+                <div className="flex justify-center">
                     <button className="normal_btn py-3 px-9 rounded-full text-[#222] font-bold text-lg">Start Boosting Tour Reviews</button>
 
                 </div>
