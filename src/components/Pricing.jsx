@@ -23,9 +23,7 @@ const Pricing = () => {
         </div>
     )
 }
-
 export default Pricing
-
 
 // eslint-disable-next-line react/prop-types
 const PricingCard = ({ title, price, description, features, isRecommended }) => {
@@ -50,7 +48,7 @@ const PricingCard = ({ title, price, description, features, isRecommended }) => 
                         color={"#FDCC0D"}
                         variant={"stroke"}
                     /></span>}
-                    <h3 className="text-2xl font-semibold text-[#A0A0A0]">{title}</h3>
+                    <h3 className="text-2xl font-semibold text-[#222]">{title}</h3>
                 </div>
                 <p className="text-[#A0A0A0] text-center mb-6">{description}</p>
                 {/* Price */}

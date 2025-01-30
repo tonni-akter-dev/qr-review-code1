@@ -8,8 +8,10 @@ import CustomerFeedback from './components/CustomerFeedback'
 import { Faq } from './components/Faq'
 import Footer from './components/Footer'
 import Header from './components/Header'
+import HowItWorks from './components/HowItWorks'
 import Pricing from './components/Pricing'
 import Reviews from './components/Reviews'
+import { Vedio } from './components/Video'
 
 function App() {
   return (
@@ -19,10 +21,12 @@ function App() {
       <CustomerFeedback />
       <Reviews />
       <Buisness />
+      <HowItWorks />
       <Benefits />
       <Pricing />
       <Faq />
       <Contact />
+      <Vedio />
       <Brands />
       <Footer />
     </div>
