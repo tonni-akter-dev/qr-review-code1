@@ -1,4 +1,5 @@
 import './App.css'
+import Banner from './components/Banner'
 import Benefits from './components/Benefits'
 import Brands from './components/Brands'
 import Buisness from './components/Buisness'
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className='bg-[#FFFEF5]'>
       <Header />
+      <Banner />
       <CustomerFeedback />
       <Reviews />
       <Buisness />
@@ -22,7 +24,7 @@ function App() {
       <Faq />
       <Contact />
       <Brands />
-      <Footer/>
+      <Footer />
     </div>
   )
 }
