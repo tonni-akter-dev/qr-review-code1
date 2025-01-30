@@ -17,6 +17,11 @@ import {
 
 } from "hugeicons-react";
 
+
+import BHB01 from '../assets/BHB011.png';
+import BHB02 from '../assets/BHB022.png';
+import BHB03 from '../assets/BHB033.png';
+
 export const superchargeData = [
     {
         title: "Smart QR Codes",
@@ -81,13 +86,13 @@ export const buisnessData = [
     {
         title: "Restaurants & Cafés",
         bg_color: "#F6EFFE",
-        icon: (size) => <Restaurant01Icon  size={size} color={"#FFFFFF"} variant={"stroke"} />,
+        icon: (size) => <Restaurant01Icon size={size} color={"#FFFFFF"} variant={"stroke"} />,
         icon_bg: "#9351F2"
     },
     {
         title: "Educational Institutions",
         bg_color: "#E9FBEF",
-        icon: (size) => <GraduationScrollIcon  size={size} color={"#FFFFFF"} variant={"stroke"} />,
+        icon: (size) => <GraduationScrollIcon size={size} color={"#FFFFFF"} variant={"stroke"} />,
         icon_bg: "#12B2A8"
     },
     {
@@ -99,13 +104,13 @@ export const buisnessData = [
     {
         title: "Medical Services",
         bg_color: "#EBF3FF",
-        icon: (size) => <Hospital02Icon  size={size} color={"#FFFFFF"} variant={"stroke"} />,
+        icon: (size) => <Hospital02Icon size={size} color={"#FFFFFF"} variant={"stroke"} />,
         icon_bg: "#377CF4"
     },
     {
         title: "Beauty, Salon, Wellness ",
         bg_color: "#FCECF4",
-        icon: (size) => <SparklesIcon  size={size} color={"#FFFFFF"} variant={"stroke"} />,
+        icon: (size) => <SparklesIcon size={size} color={"#FFFFFF"} variant={"stroke"} />,
         icon_bg: "#E73576"
     },
     {
@@ -123,8 +128,27 @@ export const buisnessData = [
     {
         title: "Retail Stores",
         bg_color: "#E6F2FF",
-        icon: (size) => <Store01Icon  size={size} color={"#FFFFFF"} variant={"stroke"} />,
+        icon: (size) => <Store01Icon size={size} color={"#FFFFFF"} variant={"stroke"} />,
         icon_bg: "#8D53F4"
     }
 
+];
+
+
+export const benefitsData = [
+    {
+        title: "Increase Reviews",
+        description: "Encourage guests to leave positive reviews.",
+        image: BHB01
+    },
+    {
+        title: "Collect User Data",
+        description: "Gather valuable customer <br/> information.",
+        image: BHB02
+    },
+    {
+        title: "Retarget",
+        description: "Reach out to customers during off-peak times to boost business.",
+        image: BHB03
+    }
 ];

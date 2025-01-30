@@ -9,11 +9,10 @@ const CustomerFeedback = () => {
         const handleResize = () => {
             setIconSize(window.innerWidth < 768 ? 27 : 40);
         };
-
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
-
+    
     return (
         <div className='lg:mt-[94px] mt-20 max-w-[1400px] lg:px-[120px] px-5 mx-auto'>
             <div>
