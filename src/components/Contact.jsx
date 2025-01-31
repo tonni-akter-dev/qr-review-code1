@@ -1,8 +1,12 @@
 import { Calling02Icon, Chatting01Icon, Mail01Icon, SentIcon } from "hugeicons-react"
+import { RefContext } from "../RefContext";
+import { useContext } from "react";
 
 const Contact = () => {
+    const { contactRef } = useContext(RefContext);
+
     return (
-        <div className="lg:my-[100px] my-20 max-w-[1400px] lg:px-[120px] px-5 mx-auto">
+        <div ref={contactRef} className="lg:my-[100px] my-20 max-w-[1400px] lg:px-[120px] px-5 mx-auto">
             <h2 className="text-[#222]  lg:text-[46px] text-2xl font-extrabold leading-normal text-center lg:mb-5 mb-4">{`Let's Get Started`}</h2>
             <p className="text-[#A0A0A0] mb-[56px] lg:text-lg text-sm  text-center">{`Ready to boost your reviews? We're here to help!`}</p>
             <div className=" px-4 lg:px-0">
@@ -42,7 +46,6 @@ const Contact = () => {
                             </p>
                         </form>
                     </div>
-
                     {/* Right Side: Contact Information */}
                     <div className=" flex flex-col gap-6 ">
                         <div className="border border-[#E5E5E5]  rounded-3xl lg:py-5 py-3.5 lg:ps-8 ps-[22px] flex gap-8 items-center">

@@ -2,8 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
-import videoimg from '../assets/videoimg.png';
+import { Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
 import cr1 from '../assets/cr1.png';
 import cr2 from '../assets/cr2.png';
 import cr3 from '../assets/cr3.png';
@@ -13,7 +12,6 @@ import play from '../assets/Play.svg';
 import { useRef, useState } from 'react';
 
 const ClientReviewSlider = () => {
-
     const videoRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
 
@@ -34,6 +32,10 @@ const ClientReviewSlider = () => {
                 effect={'coverflow'}
                 grabCursor={true}
                 centeredSlides={true}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
                 slidesPerView={3}
                 coverflowEffect={{
                     rotate: 0,
@@ -65,7 +67,7 @@ const ClientReviewSlider = () => {
                 loop={true}
                 initialSlide={2}
                 pagination={false}
-                modules={[EffectCoverflow, Pagination]}
+                modules={[EffectCoverflow, Pagination, Autoplay]}
                 className="mySwiper">
                 <SwiperSlide>
                     <div className="relative w-full h-full">

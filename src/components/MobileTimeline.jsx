@@ -71,10 +71,7 @@ const MobileTimeline = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
-
-
             {/*  step4*/}
             <div className='relative'>
                 <div className='flex justify-between mt-[-100px]'>
@@ -120,7 +117,6 @@ const MobileTimeline = () => {
                     </div>
                 </div>
             </div>
-
         </>
     )
 }

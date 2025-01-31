@@ -3,13 +3,12 @@ import { CheckmarkCircle02Icon, CrownIcon, StarIcon, ZapIcon } from "hugeicons-r
 import { pricingData } from "../utils/data";
 import { useContext, useState } from "react";
 import { RefContext } from "../RefContext";
+import { Link } from "react-router";
 
 const Pricing = () => {
     const { pricingRef } = useContext(RefContext);
-
     const [isBDT, setIsBDT] = useState(true);
 
-    // Function to handle the toggle change
     const handleToggleChange = (e) => {
         setIsBDT(e.target.checked);
     };
@@ -88,11 +87,13 @@ const PricingCard = ({ title, price, description, features, isBDT }) => {
             </div>
             {/* Button */}
             <div className="text-center">
-                <button className={` px-[64px] h-[46px] rounded-full font-extrabold text-lg capitalize  
+                <Link to={`${title === 'custom' ? "#":"/pricing"}`}>
+                    <button className={` px-[64px] h-[46px] rounded-full font-extrabold text-lg capitalize  
                           ${title === 'Custom' ? 'normal_btn1' :
-                        'normal_btn'}`}>
-                    {title === 'Custom' ? 'Contact Us' : 'Subscribe Now'}
-                </button>
+                            'normal_btn'}`}>
+                        {title === 'Custom' ? 'Contact Us' : 'Subscribe Now'}
+                    </button>
+                </Link>
             </div>
         </div>
     );

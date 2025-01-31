@@ -6,9 +6,10 @@ export const RefProvider = ({ children }) => {
   const featureRef = useRef(null);
   const pricingRef = useRef(null);
   const contactRef = useRef(null);
+  const suitsRef = useRef(null);
 
   return (
-    <RefContext.Provider value={{ featureRef, pricingRef, contactRef }}>
+    <RefContext.Provider value={{ featureRef, pricingRef, contactRef, suitsRef }}>
       {children}
     </RefContext.Provider>
   );
