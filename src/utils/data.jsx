@@ -179,7 +179,7 @@ export const faqData = [
 export const pricingData = [
     {
         title: "Gold",
-        price: "$23",
+        price: "23",
         description: "Ideal for startups and beginners.",
         features: [
             "Up to 10 reviews per month",
@@ -193,7 +193,7 @@ export const pricingData = [
     },
     {
         title: "Platinum",
-        price: "$100",
+        price: "100",
         description: "Ideal for growing businesses",
         features: [
             "Up to 100 reviews per month",

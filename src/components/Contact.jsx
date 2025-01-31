@@ -3,7 +3,7 @@ import { Calling02Icon, Chatting01Icon, Mail01Icon, SentIcon } from "hugeicons-r
 const Contact = () => {
     return (
         <div className="lg:my-[100px] my-20 max-w-[1400px] lg:px-[120px] px-5 mx-auto">
-            <h2 className="text-primary  lg:text-[46px] text-2xl font-extrabold leading-normal text-center lg:mb-5 mb-4">{`Let's Get Started`}</h2>
+            <h2 className="text-[#222]  lg:text-[46px] text-2xl font-extrabold leading-normal text-center lg:mb-5 mb-4">{`Let's Get Started`}</h2>
             <p className="text-[#A0A0A0] mb-[56px] lg:text-lg text-sm  text-center">{`Ready to boost your reviews? We're here to help!`}</p>
             <div className=" px-4 lg:px-0">
                 <div className="grid grid-cols-1 items-center lg:grid-cols-2 gap-8">

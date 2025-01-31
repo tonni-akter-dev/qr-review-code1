@@ -4,7 +4,7 @@ const ContactPage = () => {
     return (
         <div className='bg-[#FFFEF5] my-30 max-w-[1400px] lg:px-[120px] px-5 mx-auto'>
 
-            <h2 className="text-primary  lg:text-[46px] text-2xl font-extrabold leading-normal text-center lg:mb-5 mb-4">{`Let's Get Started`}</h2>
+            <h2 className="text-[#222]  lg:text-[46px] text-2xl font-extrabold leading-normal text-center lg:mb-5 mb-4">{`Let's Get Started`}</h2>
             <p className="text-[#A0A0A0] mb-[56px] lg:text-lg text-sm  text-center">{`Ready to boost your reviews? We're here to help!`}</p>
 
             <div className="bg-white rounded-[20px] shadow_custom lg:py-[56px] py-6 lg:px-10 px-6">

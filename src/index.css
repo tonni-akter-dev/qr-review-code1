@@ -132,4 +132,79 @@ video {
 
 }
 
+
+
+/* mobile arrow */
+.arrow_one {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+}
+
+.arrow_two {
+  top: 0;
+  right: 0;
+}
+
+.step_two {
+  top: 0;
+  left: 0;
+}
+
+.arrow_3 {
+  padding-left: 0;
+}
+
+.arrow_5 {
+  display: block;
+}
+
+@media (min-width:375px) and (max-width:424px) {
+  .arrow_one {
+    position: absolute !important;
+    top: 30px !important;
+    right: 0 !important;
+  }
+
+  .arrow_two {
+    top: -2px;
+    left: 0px;
+  }
+
+  .step_two {
+    left: -18px !important;
+    top: 132px !important;
+  }
+
+  .arrow_5 {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width:425px) {
+  .arrow_one {
+    position: absolute !important;
+    top: 20px !important;
+    right: 13px !important;
+  }
+
+  .arrow_two {
+    top: -12px;
+    left: 20px;
+  }
+
+  .step_two {
+    left: 0 !important;
+    top: 132px !important;
+  }
+
+  .arrow_3 {
+    padding-top: 12px !important;
+  }
+}
+
+/* mobile arrow */
+
+
+
 /* slider */

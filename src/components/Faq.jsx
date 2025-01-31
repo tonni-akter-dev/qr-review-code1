@@ -14,7 +14,7 @@ export const Faq = () => {
 
   return (
     <div className="lg:my-[100px] my-20 max-w-[1400px] lg:px-[120px] px-5 mx-auto">
-      <h2 className="text-primary  lg:text-[46px] text-2xl font-extrabold leading-normal text-center mb-4">Frequently Asked Question</h2>
+      <h2 className="text-[#222]  lg:text-[46px] text-2xl font-extrabold leading-normal text-center mb-4">Frequently Asked Question</h2>
       <p className="text-[#A0A0A0] mb-[56px] lg:text-lg text-sm  text-center">A Frequently Asked Questions (FAQ) section provides quick answers to common inquiries,<br className="lg:flex hidden" /> helping users save time and find relevant information efficiently.</p>
       <div className="grid grid-cols-1 items-center gap-9 lg:grid-cols-2 ">
         <div className=" ">
@@ -40,11 +40,11 @@ export const Faq = () => {
 
         <div className="space-y-4">
           {faqData.map((faq, index) => (
-            <div key={index} className={`shadow_custom flex justify-between items-center  rounded-[10px] p-4  ${openQuestion === faq.question ? "" : 'bg-[#F4F4F4]'}`}>
+            <div  onClick={() => toggleQuestion(faq.question)} key={index} className={`shadow_custom flex justify-between items-center  rounded-[10px] p-4 cursor-pointer  ${openQuestion === faq.question ? "" : 'bg-[#F4F4F4]'}`}>
               <div>
                 <div
                   className={`cursor-pointer flex justify-between w-full   items-center`}
-                  onClick={() => toggleQuestion(faq.question)}
+                 
                 >
                   <h3 className={`lg:text-[22px] text-sm  ${openQuestion===faq.question ? 'lg:mb-0 mb-3' : ''} lg:font-semibold font-medium `}>{faq.question}</h3>
                 </div>
