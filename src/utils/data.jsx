@@ -198,7 +198,7 @@ export const pricingData = [
         features: [
             "Up to 100 reviews per month",
             "Custom branded QR codes",
-            "Your Number With Com.Bot Branding",
+            "Our Number With Com.Bot Branding",
             "Detailed analytics",
             "Custom reward system",
         ],

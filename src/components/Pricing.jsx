@@ -44,7 +44,7 @@ export default Pricing
 // eslint-disable-next-line react/prop-types
 const PricingCard = ({ title, price, description, features, isBDT }) => {
     return (
-        <div className={`h-[607px] bg-white rounded-3xl shadow-md pt-[31px] pb-[37px] ps-[51px] pe-[34px] flex flex-col  justify-between `} style={{ boxShadow: ' 0px 6px 36px 0px rgba(40, 35, 0, 0.05)' }}>
+        <div className={`h-[607px] bg-white rounded-3xl shadow-md pt-[31px] pb-[37px] px-[34px] flex flex-col  justify-between `} style={{ boxShadow: ' 0px 6px 36px 0px rgba(40, 35, 0, 0.05)' }}>
             <div>
                 {/* Title */}
                 <div className="flex items-center justify-center mb-4">
@@ -74,20 +74,22 @@ const PricingCard = ({ title, price, description, features, isBDT }) => {
                     <span className="text-[#A0A0A0]">{title === 'Custom' ? '' : title === 'Platinum' ? '/year' : '/month'}</span>
                 </div>
                 {/* Features */}
-                <ul className="list-disc pl-6 mb-6 text-[#222]">
+                <div className="mb-6 text-[#222]">
                     {features.map((feature, index) => (
-                        <li className="flex gap-2 items-start  text-base text-[#A0A0A0] mb-4" key={index}>   <CheckmarkCircle02Icon
-                            size={24}
-                            color={"#000000"}
-                            variant={"stroke"}
-                        />
-                            {feature}</li>
+                        <div className="flex gap-2   mb-4" key={index}>
+                            <CheckmarkCircle02Icon
+                                size={24}
+                                color={"#000000"}
+                                variant={"stroke"}
+                            />
+                            <p className=" text-base text-[#A0A0A0] whitespace-nowrap "> {feature}</p>
+                        </div>
                     ))}
-                </ul>
+                </div>
             </div>
             {/* Button */}
             <div className="text-center">
-                <Link to={`${title === 'custom' ? "#":"/pricing"}`}>
+                <Link to={`${title === 'custom' ? "#" : "/pricing"}`}>
                     <button className={` px-[64px] h-[46px] rounded-full font-extrabold text-lg capitalize  
                           ${title === 'Custom' ? 'normal_btn1' :
                             'normal_btn'}`}>
