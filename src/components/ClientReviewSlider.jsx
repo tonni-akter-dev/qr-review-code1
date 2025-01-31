@@ -1,8 +1,4 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -12,6 +8,8 @@ import cr1 from '../assets/cr1.png';
 import cr2 from '../assets/cr2.png';
 import cr3 from '../assets/cr3.png';
 import cr4 from '../assets/cr4.png';
+import video1 from '../assets/video1.mp4';
+import play from '../assets/Play.svg';
 
 const ClientReviewSlider = () => {
     return (
@@ -50,7 +48,6 @@ const ClientReviewSlider = () => {
                         slidesPerView: 3,
                         spaceBetween: 50,
                     },
-
                 }}
                 loop={true}
                 initialSlide={2}
@@ -64,7 +61,14 @@ const ClientReviewSlider = () => {
                     <img src={cr2} alt="slide_image" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={videoimg} alt="slide_image" />
+                    <video
+                        controls
+                        muted
+                        loop
+                        className="w-full h-full object-cover">
+                        <source src={video1} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={cr3} alt="slide_image" />

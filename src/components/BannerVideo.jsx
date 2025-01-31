@@ -1,9 +1,6 @@
 /* eslint-disable react/no-unknown-property */
-// border-radius: 36px;
-
 import { GiftIcon, StarIcon, WhatsappIcon } from "hugeicons-react"
 
-// background: var(--Dark-Gradiant, linear-gradient(90deg, #FDCC0D 0%, #FF9529 100%));
 const BannerVideo = () => {
     return (
         <div>
