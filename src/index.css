@@ -114,13 +114,15 @@ video {
     background-size: cover;
   }
 
-  .swiper-slide img {
+  .swiper-slide img,
+  .swiper-slide video {
     display: block;
     height: 180px;
   }
 
 
-  .swiper-slide-active img {
+  .swiper-slide-active img,
+  .swiper-slide-active video {
     width: 100% !important;
     height: 100% !important;
     border-radius: 10px !important;
