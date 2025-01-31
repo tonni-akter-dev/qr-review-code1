@@ -9,7 +9,7 @@ const Pricing = () => {
                 <p className="text-base  text-[#222]">BDT</p>
                 <div className="flex items-center justify-center w-[56px] h-6 my-8">
                     <label htmlFor="toggle" className="flex items-center cursor-pointer">
-                        <input type="checkbox" id="toggle" className="sr-only peer" />
+                        <input type="checkbox" defaultChecked id="toggle" className="sr-only peer" />
                         <div className="block relative bg-gradient-to-r from-[#FFDF00] to-[#FDCC0D] w-[56px] h-6 p-1 rounded-full before:absolute before:bg-white before:w-4 before:h-4 before:p-1 before:rounded-full before:transition-all before:duration-500 before:left-1 peer-checked:before:left-8 peer-checked:before:bg-white"></div>
                     </label>
                 </div>

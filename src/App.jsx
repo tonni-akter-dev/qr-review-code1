@@ -13,6 +13,7 @@ import HowItWorks from './components/HowItWorks'
 import Pricing from './components/Pricing'
 import Reviews from './components/Reviews'
 
+
 function App() {
   return (
     <div className='bg-[#FFFEF5]'>
@@ -25,8 +26,8 @@ function App() {
       <Benefits />
       <Pricing />
       <Faq />
-      <Contact />
       <ClientReviewSlider />
+      <Contact />
       <Brands />
       <Footer />
     </div>
