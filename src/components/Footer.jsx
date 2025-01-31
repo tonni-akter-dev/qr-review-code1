@@ -5,7 +5,6 @@ import x from '../assets/x.svg'
 import linkdin from '../assets/linkdin.svg'
 import { ArrowRightDoubleIcon, SentIcon } from 'hugeicons-react'
 
-
 const Footer = () => {
   return (
     <div>
@@ -104,7 +103,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
           <div>
             <div className='w-full h-[1px] border-t border-[#F4F4F4] opacity-[0.2] pt-7 mt-[64px] '></div>
             <div className="   
@@ -116,7 +114,6 @@ const Footer = () => {
           </div>
         </div>
       </footer >
-
     </div >
   )
 }
