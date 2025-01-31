@@ -1,10 +1,14 @@
 /* eslint-disable no-unused-vars */
 import { CheckmarkCircle02Icon, CrownIcon, StarIcon, ZapIcon } from "hugeicons-react";
 import { pricingData } from "../utils/data";
+import { useContext } from "react";
+import { RefContext } from "../RefContext";
 
 const Pricing = () => {
+    const { pricingRef } = useContext(RefContext);
+    
     return (
-        <div className="lg:my-[100px] my-20 max-w-[1400px] lg:px-[120px] px-5 mx-auto">
+        <div ref={pricingRef} className="lg:my-[100px] my-20 max-w-[1400px] lg:px-[120px] px-5 mx-auto">
             <div className="flex items-center gap-6 justify-center mb-[56px]">
                 <p className="text-base  text-[#222]">BDT</p>
                 <div className="flex items-center justify-center w-[56px] h-6 my-8">

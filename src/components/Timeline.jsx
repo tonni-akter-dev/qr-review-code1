@@ -15,10 +15,14 @@ import arrow4 from '../assets/arrow4.png'
 import arrow3 from '../assets/arrow3.svg'
 import arrow5 from '../assets/arrow5.svg'
 import MobileTimeline from './MobileTimeline'
+import { useContext } from 'react'
+import { RefContext } from '../RefContext'
 
 const Timeline = () => {
+    const { featureRef } = useContext(RefContext);
+
     return (
-        <div className='mb-40'>
+        <div ref={featureRef} className='mb-40'>
             <div className='lg:block hidden'>
                 <div className='relative'>
                     <div className='flex justify-center items-center'>
