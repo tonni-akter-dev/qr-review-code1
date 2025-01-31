@@ -28,7 +28,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className=" block sm:flex text-sm lg:gap-[85px] mt-6 lg:mt-0">
+            <div className=" flex lg:justify-center justify-between text-sm  lg:gap-[85px] mt-12 lg:mt-0">
               <ul className="text-gray-700 list-none p-0 font-thin flex flex-col text-left w-full">
                 <li className="grad_text text-xl  font-bold uppercase mb-5">Product</li>
                 <li><a href="#" className="flex gap-2.5 items-center text-white mb-5 text-base">    <ArrowRightDoubleIcon
@@ -83,7 +83,8 @@ const Footer = () => {
                 />
                   Terms of Service</a></li>
               </ul>
-              <div>
+              {/* newsletter */}
+              <div className='lg:block hidden'>
                 <p className="grad_text text-xl whitespace-nowrap  font-bold uppercase mb-[50px]">subscribe newsletter</p>
                 <div className="max-w-[300px] w-full mx-auto rounded-full bg-white flex items-center ps-6 pe-1 py-1"> {/* Centered container */}
                   <input
@@ -101,12 +102,34 @@ const Footer = () => {
                   </button>
                 </div>
               </div>
+              {/* newsletter */}
+
             </div>
+            {/* newsletter  mobile view*/}
+            <div className='lg:hidden block mt-12 text-center'>
+              <p className="grad_text text-base whitespace-nowrap  font-bold uppercase mb-9">subscribe newsletter</p>
+              <div className="max-w-[300px] w-full mx-auto rounded-full bg-white flex items-center ps-6 pe-1 py-1"> {/* Centered container */}
+                <input
+                  type="email"
+                  placeholder="Enter Email Address"
+                  className="w-full border-none outline-none text-gray-600"
+                />
+                <button className="footer_sent text-white font-bold p-3
+                     rounded-full ">
+                  <SentIcon
+                    size={24}
+                    color={"#000000"}
+                    variant={"stroke"}
+                  />
+                </button>
+              </div>
+            </div>
+            {/* newsletter */}
           </div>
           <div>
             <div className='w-full h-[1px] border-t border-[#F4F4F4] opacity-[0.2] pt-7 mt-[64px] '></div>
             <div className="   
-           text-center text-white flex items-center justify-center gap-2.5">
+           text-center text-white flex flex-wrap items-center justify-center gap-2.5">
               <span>ReviewQR is owned and operated by</span>
               <img className='w-[82px] h-4' src={logo} alt="" />
               <span>using official Meta APIs.</span>
