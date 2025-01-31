@@ -3,7 +3,7 @@ import logo from '../assets/logo.webp';
 import menu from '../assets/menu.svg';
 import { Cancel01Icon } from 'hugeicons-react';
 import { Link } from 'react-router';
-import { RefContext } from '../RefContext';
+import { RefContext } from '../utils/RefContext';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -32,7 +32,14 @@ const Header = () => {
 
   const scrollToSection = (ref) => {
     if (ref && ref.current) {
-      ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+      const headerOffset = 100;
+      const elementPosition = ref.current.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
   };
 

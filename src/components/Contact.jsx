@@ -1,5 +1,5 @@
 import { Calling02Icon, Chatting01Icon, Mail01Icon, SentIcon } from "hugeicons-react"
-import { RefContext } from "../RefContext";
+import { RefContext } from "../utils/RefContext";
 import { useContext } from "react";
 
 const Contact = () => {

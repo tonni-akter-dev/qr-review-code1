@@ -2,7 +2,7 @@
 import { CheckmarkCircle02Icon, CrownIcon, StarIcon, ZapIcon } from "hugeicons-react";
 import { pricingData } from "../utils/data";
 import { useContext, useState } from "react";
-import { RefContext } from "../RefContext";
+import { RefContext } from "../utils/RefContext";
 import { Link } from "react-router";
 
 const Pricing = () => {
