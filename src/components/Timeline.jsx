@@ -40,7 +40,7 @@ const Timeline = () => {
                     </div>
                 </div>
                 <div className='relative'>
-                    <div className='absolute left-[275px] z-50 top-[56px]'>
+                    <div className='absolute left-[275px] z-40 top-[56px]'>
                         <img className='size-20' src={step2} alt="" />
                     </div>
                     <div className='flex items-center gap-8 justify-end mt-30'>
@@ -61,14 +61,14 @@ const Timeline = () => {
                     <div className='flex justify-between'>
                         <div className='  flex flex-col  text-center items-center gap-8 justify-center pt-80'>
                             <img className='w-[268px] h-[220px]' src={goodreview} alt="" />
-                            <div className='max-w-[404px]  p-6 w-full bg-white shadow_custom rounded-3xl relative z-50 '>
+                            <div className='max-w-[404px]  p-6 w-full bg-white shadow_custom rounded-3xl relative z-40 '>
                                 <h3 className='text-2xl text-[#222] font-bold mb-6'>Good Reviews & Feedback</h3>
                                 <p className='text-[#A0A0A0] text-lg  font-medium'>For 4⭐ or 5⭐ reviews, thank customers for their positive feedback.</p>
                             </div>
                         </div>
                         <div className='  p-6 flex flex-col text-center items-center gap-8 justify-center pt-85'>
                             <img className='w-[268px] h-[220px]' src={reviewsbads} alt="" />
-                            <div className='max-w-[404px]  p-6 w-full  bg-white shadow_custom rounded-3xl relative z-50'>
+                            <div className='max-w-[404px]  p-6 w-full  bg-white shadow_custom rounded-3xl relative z-40'>
                                 <h3 className='text-2xl text-[#222] font-bold mb-6'>Average/Bad Reviews & Feedback</h3>
                                 <p className='text-[#A0A0A0] text-lg  font-medium'>Apologize and assure the customer their concerns are being addressed.</p>
                             </div>
@@ -84,7 +84,7 @@ const Timeline = () => {
                         <div className='  flex flex-col text-center items-center gap-8 justify-center'>
                             <img className='absolute top-[-10px] z-10' src={arrow4} alt="" />
                             <img className='w-[268px] h-[220px] mt-60' src={discount} alt="" />
-                            <div className='max-w-[404px] bg-white shadow_custom p-6  rounded-3xl w-full  relative z-50'>
+                            <div className='max-w-[404px] bg-white shadow_custom p-6  rounded-3xl w-full  relative z-40'>
                                 <h3 className='text-2xl text-[#222] font-bold mb-6'>Happy Client</h3>
                                 <p className='text-[#A0A0A0] text-lg  font-medium'>Thank you so much for the discount! I really appreciate how quickly you resolved my issue. I’ll definitely be visiting again soon!</p>
                             </div>
@@ -93,7 +93,7 @@ const Timeline = () => {
                         <div className='  flex flex-col text-center items-center gap-8 justify-center'>
                             <img className='absolute top-[-10px] z-10' src={arrow4} alt="" />
                             <img className='w-[268px] h-[220px] mt-60' src={issuse} alt="" />
-                            <div className='max-w-[404px]   w-full bg-white shadow_custom p-6 rounded-3xl relative z-50 '>
+                            <div className='max-w-[404px]   w-full bg-white shadow_custom p-6 rounded-3xl relative z-40 '>
                                 <h3 className='text-2xl text-[#222] font-bold mb-6'>Offer a Solution</h3>
                                 <p className='text-[#A0A0A0] text-lg  font-medium'>We’re happy to offer you a 10% discount, valid for 30 days! Show it on your next visit, and we’ll verify it in our system. See you soon!</p>
                             </div>

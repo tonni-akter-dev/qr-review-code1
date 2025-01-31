@@ -8,10 +8,11 @@ const Banner = () => {
                 With Insightful QR Codes
             </h1>
             <p className="lg:text-lg text-sm text-[#A0A0A0] max-w-[561px] text-center mx-auto lg:mb-[56px]  mb-6">Turn happy customers into glowing reviews. Our WhatsApp-powered QR system helps you collect more positive reviews while privately handling feedback for improvement.</p>
-            <div className="flex gap-4 items-center justify-center">
+            <div className="flex flex-wrap gap-4 items-center justify-center">
                 <button className="cursor-pointer normal_btn1  lg:text-lg  text-sm font-bold text-[#222] 
-                py-4 px-6 rounded-full ">Get Your QR Code</button>
-                <button className="cursor-pointer  border border-[#E5E5E5]  lg:text-lg  text-sm font-bold text-[#222] py-4 px-6 rounded-full ">See How It Works</button>
+                 lg:py-4 py-[18px] px-6 rounded-full ">Get Your QR Code</button>
+                <button className="cursor-pointer  border border-[#E5E5E5]  lg:text-lg  text-sm font-bold text-[#222]
+                 lg:py-4 py-[18px] px-6 rounded-full ">See How It Works</button>
             </div>
             <div className="flex justify-center">
                 <BannerVideo />

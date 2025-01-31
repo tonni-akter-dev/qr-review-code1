@@ -1,12 +1,43 @@
 /* eslint-disable react/no-unknown-property */
 import { GiftIcon, StarIcon, WhatsappIcon } from "hugeicons-react"
+import video1 from '../assets/video1.mp4';
+import play from '../assets/Play.svg';
+import { useRef, useState } from "react";
+
 
 const BannerVideo = () => {
+    const videoRef = useRef(null);
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    const handlePlay = () => {
+        console.log('click');
+        if (videoRef.current) {
+            videoRef.current.play();
+            setIsPlaying(true);
+        }
+    };
+
     return (
         <div>
-            <div className="relative rounded-3xl mt-[58px] bg-gradient-to-r from-[#FDCC0D] to-[#FF9529] max-w-[880px] w-full lg:h-[430px] h-[166px]">
-                <div className="lg:p-4 p-2 lg:w-[880px] w-full h-full lg:rounded-[36px] rounded-lg ">
-                    <iframe width="100%" style={{ borderRadius: "24px" }} height="100%" src="https://www.youtube.com/embed/-yIsQPp31L0?si=y-8d2XwHLyiE6zDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div className="relative rounded-3xl lg:mt-[58px] mt-6 bg-gradient-to-r from-[#FDCC0D] to-[#FF9529] max-w-[880px] w-full lg:h-[430px] h-[166px]">
+                <div className="relative lg:w-[880px] w-full h-full lg:rounded-[36px] rounded-lg ">
+                    {!isPlaying && (
+                        <div onClick={handlePlay} className="absolute top-[40%] left-[45%] cursor-pointer z-40">
+                            <img className="lg:size-[78px] size-8" src={play} alt="Play" />
+                        </div>
+                    )}
+                    <video
+                        ref={videoRef}
+                        controls
+                        muted
+                        loop
+                        onPlay={() => setIsPlaying(true)}
+                        onPause={() => setIsPlaying(false)}
+                        style={{ borderRadius: "24px", width: "100%", height: "100%", objectFit: "cover" }}
+                        className="rounded-3xl w-[880px]">
+                        <source src={video1} type="video/mp4" />
+                    </video>
+
                 </div>
                 <div className="absolute top-[108px] left-[-160px] bg-white rounded-full w-fit py-2 px-4 lg:flex hidden gap-2.5 shadow_custom text-sm text-[#24252A] font-medium">
                     <StarIcon size={20} color={"#FFC300"} variant={"stroke"} />

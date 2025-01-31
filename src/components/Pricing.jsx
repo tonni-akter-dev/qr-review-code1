@@ -9,9 +9,13 @@ const Pricing = () => {
     
     return (
         <div ref={pricingRef} className="lg:my-[100px] my-20 max-w-[1400px] lg:px-[120px] px-5 mx-auto">
+             <h2 className="text-primary  lg:text-[46px] text-2xl font-extrabold leading-normal text-center lg:mb-5 mb-4">The Right Plan for Your Business</h2>
+            <p className="text-[#A0A0A0] mb-[30px] lg:text-lg text-sm  text-center">We have several powerful plans to showcase your business and get discovered <br />
+            as a creative entrepreneurs. Everything you need.</p>          
+           
             <div className="flex items-center gap-6 justify-center mb-[56px]">
                 <p className="text-base  text-[#222]">BDT</p>
-                <div className="flex items-center justify-center w-[56px] h-6 my-8">
+                <div className="flex items-center justify-center w-[56px] ">
                     <label htmlFor="toggle" className="flex items-center cursor-pointer">
                         <input type="checkbox" defaultChecked id="toggle" className="sr-only peer" />
                         <div className="block relative bg-gradient-to-r from-[#FFDF00] to-[#FDCC0D] w-[56px] h-6 p-1 rounded-full before:absolute before:bg-white before:w-4 before:h-4 before:p-1 before:rounded-full before:transition-all before:duration-500 before:left-1 peer-checked:before:left-8 peer-checked:before:bg-white"></div>

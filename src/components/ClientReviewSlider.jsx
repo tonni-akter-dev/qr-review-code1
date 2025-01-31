@@ -10,8 +10,21 @@ import cr3 from '../assets/cr3.png';
 import cr4 from '../assets/cr4.png';
 import video1 from '../assets/video1.mp4';
 import play from '../assets/Play.svg';
+import { useRef, useState } from 'react';
 
 const ClientReviewSlider = () => {
+
+    const videoRef = useRef(null);
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    const handlePlay = () => {
+        console.log('click');
+        if (videoRef.current) {
+            videoRef.current.play();
+            setIsPlaying(true);
+        }
+    };
+
     return (
         <div className='max-w-[1400px] lg:px-[120px] px-5 py-[25px] mx-auto'>
             <h2 className="text-primary  lg:text-[46px] text-2xl font-extrabold leading-normal text-center lg:mb-5 mb-4">Clients Review</h2>
@@ -55,42 +68,68 @@ const ClientReviewSlider = () => {
                 modules={[EffectCoverflow, Pagination]}
                 className="mySwiper">
                 <SwiperSlide>
-                    <img src={cr1} alt="slide_image" />
+                    <div className="relative w-full h-full">
+                        {/* Image */}
+                        <img src={cr1} alt="slide_image" />
+                        {/* Text Overlay */}
+                        <div className="absolute inset-0 flex flex-col justify-end items-center bottom-5">
+                            <p className="text-white text-xl font-bold">Daniel Lee</p>
+                            <p className="text-[#222] text-base font-semibold">Brand name</p>
+                        </div>
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={cr2} alt="slide_image" />
+                    <div className="relative w-full h-full">
+                        {/* Image */}
+                        <img src={cr2} alt="slide_image" />
+                        {/* Text Overlay */}
+                        <div className="absolute inset-0 flex flex-col justify-end items-center bottom-5">
+                            <p className="text-white text-xl font-bold">Daniel Lee</p>
+                            <p className="text-[#222] text-base font-semibold">Brand name</p>
+                        </div>
+                    </div>                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="relative  w-full h-full lg:rounded-[36px] rounded-lg ">
+                        {!isPlaying && (
+                            <div onClick={handlePlay} className="absolute top-[40%] left-[45%] cursor-pointer z-40">
+                                <img className="!lg:w-12 !h-12 !p-0  " src={play} alt="Play" />
+                            </div>
+                        )}
+                        <video
+                            ref={videoRef}
+                            controls
+                            muted
+                            loop
+                            onPlay={() => setIsPlaying(true)}
+                            onPause={() => setIsPlaying(false)}
+                            className="w-full h-full object-cover">
+                            <source src={video1} type="video/mp4" />
+                        </video>
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <video
-                        controls
-                        muted
-                        loop
-                        className="w-full h-full object-cover">
-                        <source src={video1} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                    <div className="relative w-full h-full">
+                        {/* Image */}
+                        <img src={cr3} alt="slide_image" />
+                        {/* Text Overlay */}
+                        <div className="absolute inset-0 flex flex-col justify-end items-center bottom-5">
+                            <p className="text-white text-xl font-bold">Daniel Lee</p>
+                            <p className="text-[#222] text-base font-semibold">Brand name</p>
+                        </div>
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={cr3} alt="slide_image" />
+                    <div className="relative w-full h-full">
+                        {/* Image */}
+                        <img src={cr4} alt="slide_image" />
+                        {/* Text Overlay */}
+                        <div className="absolute inset-0 flex flex-col justify-end items-center bottom-5">
+                            <p className="text-white text-xl font-bold">Daniel Lee</p>
+                            <p className="text-[#222] text-base font-semibold">Brand name</p>
+                        </div>
+                    </div>
                 </SwiperSlide>
-                <SwiperSlide>
-                    <img src={cr4} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={cr1} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={cr2} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={videoimg} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={cr3} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={cr4} alt="slide_image" />
-                </SwiperSlide>
+
             </Swiper>
         </div >
     )

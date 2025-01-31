@@ -43,7 +43,6 @@ const Header = () => {
           <Link to={'/'}>
             <img className='lg:w-[191px] w-[128px] lg:h-[50px] h-[33px] object-contain' src={logo} alt="" />
           </Link>
-
           {hasScrolled ? <button onClick={toggleMobileMenu} className="md:hidden text-gray-600 hover:text-gray-800 focus:outline-none">
             {isMobileMenuOpen ?
               <Cancel01Icon

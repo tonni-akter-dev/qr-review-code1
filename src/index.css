@@ -73,6 +73,7 @@ body {
   height: 100% !important;
   border-radius: 30px !important;
   padding: 12px;
+  /* background: linear-gradient(180deg, rgba(255, 223, 0, 0.10) 10%, rgba(242, 139, 15, 0.70) 70%, #FFF 100%), url('') lightgray 50% / cover no-repeat; */
 }
 
 .swiper {
