@@ -132,8 +132,6 @@ video {
 
 }
 
-
-
 /* mobile arrow */
 .arrow_one {
   position: absolute !important;
@@ -169,6 +167,35 @@ video {
   .arrow_two {
     top: -2px;
     left: 0px;
+  }
+
+  .step_two {
+    left: -18px !important;
+    top: 132px !important;
+  }
+
+  .arrow_5 {
+    display: none !important;
+  }
+}
+
+.step1_card {
+  margin-left: 40px;
+}
+
+@media (min-width:200px) and (max-width:374px) {
+  .step1_card {
+    margin-left: 0px !important;
+  }
+  .arrow_one {
+    position: absolute !important;
+    top: 30px !important;
+    right:-16px !important;
+  }
+
+  .arrow_two {
+    top: -2px;
+    left: -22px;
   }
 
   .step_two {

@@ -22,7 +22,7 @@ const MobileTimeline = () => {
                 <div className='flex justify-center  items-center'>
                     <img className='relative z-40 size-[52px]' src={step1} alt="" />
                 </div>
-                <div className='flex flex-col items-start gap-3 ms-10'>
+                <div className='flex flex-col items-start gap-3 ms-10 step1_card'>
                     <img className='w-[142px] h-[115px]' src={scan} alt="" />
                     <div className='text-center max-w-[214px] bg-white shadow_custom p-2 w-full '>
                         <h3 className='text-base text-[#222] font-bold mb-1'>Scan & Access Menu</h3>

@@ -76,13 +76,14 @@ const PricingCard = ({ title, price, description, features, isBDT }) => {
                 {/* Features */}
                 <div className="mb-6 text-[#222]">
                     {features.map((feature, index) => (
-                        <div className="flex gap-2   mb-4" key={index}>
+                        <div className="flex items-start gap-2   mb-4" key={index}>
                             <CheckmarkCircle02Icon
                                 size={24}
                                 color={"#000000"}
                                 variant={"stroke"}
+                                className="flex-shrink-0"
                             />
-                            <p className=" text-base text-[#A0A0A0] whitespace-nowrap "> {feature}</p>
+                            <p className=" text-base text-[#A0A0A0] lg:whitespace-nowrap "> {feature}</p>
                         </div>
                     ))}
                 </div>
@@ -90,7 +91,7 @@ const PricingCard = ({ title, price, description, features, isBDT }) => {
             {/* Button */}
             <div className="text-center">
                 <Link to={`${title === 'custom' ? "#" : "/pricing"}`}>
-                    <button className={` px-[64px] h-[46px] rounded-full font-extrabold text-lg capitalize  
+                    <button className={` px-[64px] h-[46px] rounded-full font-extrabold lg:text-lg text-base capitalize   whitespace-nowrap
                           ${title === 'Custom' ? 'normal_btn1' :
                             'normal_btn'}`}>
                         {title === 'Custom' ? 'Contact Us' : 'Subscribe Now'}
