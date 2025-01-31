@@ -2,7 +2,7 @@ import BannerVideo from "./BannerVideo"
 
 const Banner = () => {
     return (
-        <div className="lg:px-0 px-5">
+        <div className="lg:px-0 px-5 mt-28">
             <h1 className="lg:text-[56px] text-2xl text-[#24252A]  font-bold mx-auto text-center lg:mt-[56px] mt-6 mb-6">
                 Increase Your <span className="grad_text">5-Star Ratings</span> <br />
                 With Insightful QR Codes

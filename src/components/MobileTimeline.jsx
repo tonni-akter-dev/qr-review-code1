@@ -108,7 +108,7 @@ const MobileTimeline = () => {
                             <p className='text-[#A0A0A0] text-xs  font-medium'>Thank you so much for the discount! I really appreciate how quickly you resolved my issue. I’ll definitely be visiting again soon!</p>
                         </div>
                     </div>
-                    <img className='absolute left-[176px] bottom-[43px] z-50' src={arrow5} alt="" />
+                    <img className='absolute left-[176px] bottom-[43px] z-40' src={arrow5} alt="" />
 
                     <div className='  flex flex-col text-center items-center gap-3 justify-center'>
                         <img className='absolute top-[103px] z-10' src={arrow4} alt="" />
