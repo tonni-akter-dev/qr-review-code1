@@ -9,24 +9,26 @@ import cr3 from '../assets/cr3.png';
 import cr4 from '../assets/cr4.png';
 import video1 from '../assets/video1.mp4';
 import play from '../assets/Play.svg';
-import effect from '../assets/effect.png';
 import { useRef, useState } from 'react';
-
 
 const ClientReviewSlider = () => {
     const videoRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
 
     const handlePlay = () => {
-        console.log('click');
         if (videoRef.current) {
-            videoRef.current.play();
-            setIsPlaying(true);
+            if (isPlaying) {
+                videoRef.current.pause();
+            } else {
+                videoRef.current.play();
+            }
+            setIsPlaying(!isPlaying);
         }
     };
 
+
     return (
-        <div className='max-w-[1400px] lg:px-[120px] px-5 py-[25px] mx-auto'>
+        <div className='max-w-[1400px] lg:px-[100px] px-5 py-[25px] mx-auto'>
             <h2 className="text-[#222]  lg:text-[46px] text-2xl font-extrabold leading-normal text-center lg:mb-5 mb-4">Clients Review</h2>
             <p className="text-[#A0A0A0] mb-[56px] lg:text-lg text-sm  text-center">We have several powerful plans to showcase your business and get discovered <br />
                 as a creative entrepreneurs. Everything you need.</p>
@@ -34,14 +36,14 @@ const ClientReviewSlider = () => {
                 effect={'coverflow'}
                 grabCursor={true}
                 centeredSlides={true}
-                // autoplay={{
-                //     delay: 2500,
-                //     disableOnInteraction: false,
-                // }}
-                slidesPerView={3}
+                autoplay={{
+                    // delay: 2500,
+                    // disableOnInteraction: false,
+                }}
+                slidesPerView={4}
                 coverflowEffect={{
                     rotate: 0,
-                    stretch: 80,
+                    stretch: 0,
                     depth: 200,
                     modifier: 1,
                     slideShadows: false,
@@ -67,29 +69,22 @@ const ClientReviewSlider = () => {
                     },
                 }}
                 loop={true}
-                initialSlide={2}
+                initialSlide={1}
                 pagination={false}
                 modules={[EffectCoverflow, Pagination, Autoplay]}
                 className="mySwiper">
-
-
                 <SwiperSlide>
-                    <div className="relative w-full h-full lg:rounded-[36px] rounded-lg overflow-hidden">
-                        <div
-                            className="absolute inset-0 bg-no-repeat bg-top bg-cover "
-                            style={{ backgroundImage: `url(${effect})` }}
-                        ></div>
+                    <div onClick={handlePlay} className="relative w-full h-full lg:rounded-[36px] rounded-lg overflow-hidden">
+                        <div className="effect-bg"></div>
                         {!isPlaying && (
                             <div
                                 onClick={handlePlay}
-                                className="absolute top-[40%] left-[40%] cursor-pointer z-30"
-                            >
+                                className="absolute inset-0 flex justify-center items-center z-30">
                                 <img className="!lg:w-12 !h-12 !p-0" src={play} alt="Play" />
                             </div>
                         )}
                         <video
                             ref={videoRef}
-                            controls
                             muted
                             loop
                             onPlay={() => setIsPlaying(true)}
@@ -102,20 +97,24 @@ const ClientReviewSlider = () => {
                 </SwiperSlide>
 
                 {[cr1, cr2, cr3, cr4].map((image, index) => (
-                    <SwiperSlide key={index}>
-                        <div className="relative w-full h-full lg:rounded-[36px] rounded-lg overflow-hidden">
-                            <div className="absolute inset-0 bg-no-repeat bg-top bg-cover opacity-80 z-10" style={{ backgroundImage: `url(${effect})` }}></div>
-                            <img className="w-full h-full object-cover rounded-[36px] z-20" src={image} alt="slide_image" />
 
+                    <SwiperSlide key={index} className="swiper-slide">
+                        <div className="relative w-full h-full lg:rounded-[36px] rounded-lg overflow-hidden">
+
+                            <div className="effect-bg"></div>
+                            <img className="w-full h-full object-cover rounded-[36px] z-20" src={image} alt="slide_image" />
+                            {/* Play Button Centered */}
                             <div className="absolute inset-0 flex justify-center items-center z-30">
                                 <img className="!lg:w-12 !h-12 !p-0" src={play} alt="Play" />
                             </div>
+
                             <div className="absolute inset-0 flex flex-col justify-end items-center pb-5">
                                 <p className="text-white text-xl font-bold">Daniel Lee</p>
                                 <p className="text-[#222] text-base font-semibold">Brand name</p>
                             </div>
                         </div>
                     </SwiperSlide>
+
                 ))}
             </Swiper>
         </div>
