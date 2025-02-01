@@ -6,7 +6,6 @@ const HowItWorks = () => {
             <h2 className="text-[#222]  lg:text-[46px] text-2xl font-extrabold leading-normal text-center mb-4">Let’s know How it Work</h2>
             <p className="text-[#A0A0A0] mb-[56px] lg:text-lg text-sm  text-center">Let’s explore how it works and discover the process step by step. Understanding this will give <br /> you a clear view of how everything comes together seamlessly.</p>
             <Timeline />
-
         </div>
     )
 }
