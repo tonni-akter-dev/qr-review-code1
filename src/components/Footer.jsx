@@ -29,61 +29,6 @@ const Footer = () => {
               </div>
             </div>
             <div className=" flex lg:justify-center justify-between text-sm  lg:gap-[85px] mt-12 lg:mt-0">
-              {/* <ul className="text-gray-700 list-none p-0 font-thin flex flex-col text-left w-full">
-                <li className="grad_text text-xl  font-bold uppercase mb-5">Product</li>
-                <li><a href="#" className="flex gap-2.5 items-center text-white mb-5 text-base">    <ArrowRightDoubleIcon
-                  size={24}
-                  color={"#FFFFFF"}
-                  variant={"stroke"}
-                />
-                  Features</a></li>
-                <li><a href="#" className="flex gap-2.5 items-center text-white mb-5 text-base">    <ArrowRightDoubleIcon
-                  size={24}
-                  color={"#FFFFFF"}
-                  variant={"stroke"}
-                />
-                  Pricing</a></li>
-                <li><a href="#" className="flex gap-2.5 items-center text-white mb-5 text-base">    <ArrowRightDoubleIcon
-                  size={24}
-                  color={"#FFFFFF"}
-                  variant={"stroke"}
-                />
-                  API</a></li>
-                <li><a href="#" className="flex gap-2.5 items-center text-white mb-5 text-base">    <ArrowRightDoubleIcon
-                  size={24}
-                  color={"#FFFFFF"}
-                  variant={"stroke"}
-                />
-                  Integrations</a></li>
-              </ul>
-              <ul className="text-gray-700 list-none p-0 font-thin flex flex-col text-left w-full">
-                <li className="grad_text text-xl  font-bold uppercase mb-5">support</li>
-                <li><a href="#" className="flex gap-2.5 items-center text-white mb-5 text-base">    <ArrowRightDoubleIcon
-                  size={24}
-                  color={"#FFFFFF"}
-                  variant={"stroke"}
-                />
-                  Documentation</a></li>
-                <li><a href="#" className="flex gap-2.5 items-center text-white mb-5 text-base">    <ArrowRightDoubleIcon
-                  size={24}
-                  color={"#FFFFFF"}
-                  variant={"stroke"}
-                />
-                  Contact</a></li>
-                <li><a href="#" className="flex gap-2.5 items-center text-white mb-5 text-base">    <ArrowRightDoubleIcon
-                  size={24}
-                  color={"#FFFFFF"}
-                  variant={"stroke"}
-                />
-                  Privacy Policy</a></li>
-                <li><a href="#" className="flex gap-2.5 items-center text-white mb-5 text-base">    <ArrowRightDoubleIcon
-                  size={24}
-                  color={"#FFFFFF"}
-                  variant={"stroke"}
-                />
-                  Terms of Service</a></li>
-              </ul> */}
-
               <ul className="text-gray-700 list-none p-0 font-thin flex flex-col text-left w-full">
                 <li className="grad_text text-xl font-bold uppercase mb-5">Product</li>
                 <li>
@@ -193,8 +138,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </footer >
-    </div >
+      </footer>
+    </div>
   )
 }
 
