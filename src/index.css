@@ -55,9 +55,6 @@ body {
   background: var(--Light-Gradiant, linear-gradient(90deg, #FFDF00 0%, #FDCC0D 100%));
 }
 
-
-
-
 /* slider */
 .swiper-slide-active {
   width: 600px !important;
