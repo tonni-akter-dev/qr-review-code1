@@ -22,7 +22,7 @@ const Timeline = () => {
             <div className='lg:block hidden'>
                 <div className='relative'>
                     <div className='flex justify-center items-center'>
-                        <img className='size-20' src={step1} alt="" />
+                        <img className='size-20 z-40' src={step1} alt=""  />
                     </div>
                     <div className='flex items-center gap-8 mt-9'>
                         <img className='w-[268px] h-[220px]' src={scan} alt="" />
@@ -31,12 +31,12 @@ const Timeline = () => {
                             <p className='text-[#A0A0A0] text-lg  font-medium'>Place a branded QR code on the restaurant table for customers to scan, message on WhatsApp, and instantly receive the menu PDF.</p>
                         </div>
                     </div>
-                    <div className='absolute top-10 right-[220px]'>
+                    <div className='absolute top-10 xl:right-[220px] lg:right-[180px]'>
                         <img className='w-[318px] h-[374px]' src={arrow1} alt="" />
                     </div>
                 </div>
                 <div className='relative'>
-                    <div className='absolute left-[275px] z-40 top-[56px]'>
+                    <div className='absolute xl:left-[253px] left-[180px] z-40 top-[56px]'>
                         <img className='size-20' src={step2} alt="" />
                     </div>
                     <div className='flex items-center gap-8 justify-end mt-30'>
@@ -46,23 +46,29 @@ const Timeline = () => {
                         </div>
                         <img className='w-[268px] h-[220px]' src={gatherreviews} alt="" />
                     </div>
-                    <div className='absolute top-[-63px] left-[304px]'>
+                    <div className='absolute top-[-63px]   xl:left-[280px] lg:left-[207px]'>
                         <img className='w-[318px] h-[374px]' src={arrow2} alt="" />
                     </div>
                 </div>
                 <div className='relative'>
-                    <div className='absolute top-[90px]  left-[560px]'>
+                    <div className='flex justify-center items-center mt-20'>
+                        {/* <div className='absolute top-[90px]  left-[560px]'> */}
                         <img className='size-20' src={step3} alt="" />
                     </div>
+                    <div className='flex justify-center items-center'>
+                        {/* <div className='absolute top-[162px] left-[227px]'> */}
+                        <img className='w-[762px] h-[200px]' src={arrow3} alt="" />
+
+                    </div>
                     <div className='flex justify-between'>
-                        <div className='  flex flex-col  text-center items-center gap-8 justify-center pt-80'>
+                        <div className='  flex flex-col  text-center items-center gap-8 justify-center'>
                             <img className='w-[268px] h-[220px]' src={goodreview} alt="" />
                             <div className='max-w-[404px]  p-6 w-full bg-white shadow_custom rounded-3xl relative z-40 '>
                                 <h3 className='text-2xl text-[#222] font-bold mb-6'>Good Reviews & Feedback</h3>
                                 <p className='text-[#A0A0A0] text-lg  font-medium'>For 4⭐ or 5⭐ reviews, thank customers for their positive feedback.</p>
                             </div>
                         </div>
-                        <div className='  p-6 flex flex-col text-center items-center gap-8 justify-center pt-85'>
+                        <div className='  p-6 flex flex-col text-center items-center gap-8 justify-center'>
                             <img className='w-[268px] h-[220px]' src={reviewsbads} alt="" />
                             <div className='max-w-[404px]  p-6 w-full  bg-white shadow_custom rounded-3xl relative z-40'>
                                 <h3 className='text-2xl text-[#222] font-bold mb-6'>Average/Bad Reviews & Feedback</h3>
@@ -70,9 +76,7 @@ const Timeline = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='absolute top-[162px] left-[227px]'>
-                        <img className='w-[762px] h-[200px]' src={arrow3} alt="" />
-                    </div>
+
                 </div>
                 {/*  step4*/}
                 <div className='relative'>

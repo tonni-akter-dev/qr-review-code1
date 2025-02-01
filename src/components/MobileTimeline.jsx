@@ -14,6 +14,7 @@ import arrow2 from '../assets/mobileArrow2.svg'
 import arrow3 from '../assets/mobileArrow3.svg'
 import arrow4 from '../assets/mobileArrow4.svg'
 import arrow5 from '../assets/mobileArrow5.svg'
+import arrow51 from '../assets/arrow5.svg'
 
 const MobileTimeline = () => {
     return (
@@ -29,7 +30,7 @@ const MobileTimeline = () => {
                         <p className='text-[#A0A0A0] text-xs'>Place a branded QR code on the restaurant table for customers to scan, message on WhatsApp, and instantly receive the menu PDF.</p>
                     </div>
                 </div>
-                <div className='arrow_one '>
+                <div className='arrow_one'>
                     <img className='w-[179px] h-[284px]' src={arrow1} alt="" />
                 </div>
             </div>
@@ -49,14 +50,14 @@ const MobileTimeline = () => {
                 </div>
             </div>
             <div className='relative'>
-                <div className='flex justify-center mb-[-10px]  '>
+                <div className='flex justify-center mb-[-10px]'>
                     <img className='size-[52px]' src={step3} alt="" />
                 </div>
                 <div className='flex items-center justify-center pt-[20px] arrow_3 '>
-                    <img className='w-[250px] h-[71px]' src={arrow3} alt="" />
+                    <img className='w-[250px] h-[71px] arrow_three_img' src={arrow3} alt="" />
                 </div>
                 <div className='flex justify-between'>
-                    <div className='  flex flex-col  text-center items-center gap-3 justify-center'>
+                    <div className='  flex flex-col text-center items-center gap-3 justify-center'>
                         <img className='w-[177px] h-[116px]' src={goodreview} alt="" />
                         <div className='max-w-[177px] p-2 w-full bg-white shadow_custom rounded-lg relative z-40'>
                             <h3 className='text-sm text-[#222] font-bold mb-1 leading-4'>Good Reviews & Feedback</h3>
@@ -106,6 +107,7 @@ const MobileTimeline = () => {
                         </div>
                     </div>
                     <img className='absolute arrow_5 left-[176px] bottom-[43px] z-40' src={arrow5} alt="" />
+                    <img className='absolute arrow_51 left-[176px] bottom-[43px] z-40' src={arrow51} alt="" />
 
                     <div className='  flex flex-col text-center items-center gap-3 justify-center'>
                         <img className='absolute top-[103px] z-10' src={arrow4} alt="" />
