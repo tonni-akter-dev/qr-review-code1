@@ -8,11 +8,11 @@ const Benefits = () => {
                     <p className="text-[#A0A0A0] mb-[56px] lg:text-lg text-sm  text-center">Enhance guest satisfaction, increase positive reviews, build trust, boost visibility, and drive <br /> bookings with tailored solutions for hospitality businesses</p>
                 <div className="grid lg:grid-cols-3 gap-6 grid-cols-1">
                     {benefitsData.map((item, index) => (
-                        <div key={index} className=" rounded-[20px] text-center  pb-10" style={{ boxShadow: "0px 6px 36px 0px rgba(40, 35, 0, 0.05)" }} >
+                        <div key={index} className="transition-all cursor-pointer duration-300 ease-in-out benefit_card rounded-[20px] text-center  pb-10" style={{ boxShadow: "0px 6px 36px 0px rgba(40, 35, 0, 0.05)" }} >
                             <img src={item.image} alt={item.title} />
                             <div className="px-11">
-                                <h3 className="text-2xl font-bold text-[#222] my-6">{item.title}</h3>
-                                <p className="text-[#A0A0A0] lg:text-lg text-base" dangerouslySetInnerHTML={{ __html: item.description }}></p>
+                                <h3 className="text-2xl font-bold text-[#222] my-6 transition-all duration-300 ease-in-out">{item.title}</h3>
+                                <p className="text-[#A0A0A0] lg:text-lg text-base " dangerouslySetInnerHTML={{ __html: item.description }}></p>
                             </div>
                         </div>
                     ))}

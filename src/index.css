@@ -37,7 +37,14 @@ body {
 }
 
 .grad_text {
-  background: var(--Dark-Gradiant, linear-gradient(90deg, #FDCC0D 0%, #FF9529 100%));
+  background: linear-gradient(90deg, #FDCC0D 0%, #FF9529 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.benefit_card:hover h3 {
+  background: linear-gradient(90deg, #FDCC0D 0%, #FF9529 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
