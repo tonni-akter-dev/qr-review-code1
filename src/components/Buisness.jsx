@@ -24,15 +24,22 @@ const Buisness = () => {
                 <p className="text-[#A0A0A0] lg:mb-[56px] mb-6 lg:text-lg text-sm  text-center">Empower your business with tools to collect, manage, and reward customer feedback effortlessly.</p>
                 <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-6 gap-5 mb-9">
                     {buisnessData.map((item, index) => (
-                        <div key={index} className="lg:py-6  lg:px-5 px-4 py-4 rounded-[20px]" style={{ backgroundColor: item.bg_color }}>
-                            <div className={`bg-${item.icon_bg}  mx-auto lg:p-5 p-[12px] w-fit rounded-full mb-6 flex justify-center items-center`} style={{ backgroundColor: item.icon_bg }}>
-                                <div >
+                        <div
+                            key={index}
+                            className="h-[200px] lg:py-6 lg:px-5 px-4 py-4 rounded-[20px] group transition-all duration-300"
+                            style={{ backgroundColor: item.bg_color }}>
+                            <div
+                                className={`bg-${item.icon_bg} mx-auto lg:p-5 p-[12px] w-fit rounded-full mb-6 flex justify-center items-center transition-transform duration-300 group-hover:rotate-180`}
+                                style={{ backgroundColor: item.icon_bg }}>
+                                <div>
                                     {item.icon(iconSize)}
                                 </div>
                             </div>
-                            <h3 className="text-[#222] lg:text-[22px] text-sm font-bold text-center mb-4  
-                            leading-[24px]">{item.title}</h3>
+                            <h3 className="text-[#222] lg:text-[22px] text-sm font-bold text-center mb-4 leading-[24px]">
+                                {item.title}
+                            </h3>
                         </div>
+
                     ))}
                 </div>
             </div>

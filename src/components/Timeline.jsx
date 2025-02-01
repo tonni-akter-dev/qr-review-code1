@@ -102,22 +102,21 @@ const Timeline = () => {
                         <div className='  flex flex-col text-center items-center gap-8 justify-center'>
                             <img className='absolute top-[-10px] z-10' src={arrow4} alt="" />
                             <img className='w-[268px] h-[220px] mt-60' src={client} alt="" />
-                            <div className='max-w-[404px] bg-white shadow_custom p-6  rounded-3xl w-full '>
+                            <div className='max-w-[404px] bg-white shadow_custom p-6  rounded-3xl w-full relative z-40 '>
                                 <h3 className='text-2xl text-[#222] font-bold mb-6'>Discount</h3>
                                 <p className='text-[#A0A0A0] text-lg  font-medium'>Send a 10% discount coupon, valid for 30 days, and notify the restaurant to verify it via CRM.</p>
                             </div>
                         </div>
-                        <img className='absolute left-[410px] bottom-[70px]' src={arrow5} alt="" />
+                        <img className='absolute left-[410px] bottom-[70px] z-30' src={arrow5} alt="" />
 
                         <div className='  flex flex-col text-center items-center gap-8 justify-center'>
                             <img className='absolute top-[-10px] z-10' src={arrow4} alt="" />
                             <img className='w-[268px] h-[220px] mt-60' src={offer} alt="" />
-                            <div className='max-w-[404px]   w-full bg-white shadow_custom p-6 rounded-3xl '>
+                            <div className='max-w-[404px]   w-full bg-white shadow_custom p-6 rounded-3xl  relative z-40 '>
                                 <h3 className='text-2xl text-[#222] font-bold mb-6'>Acknowledge the Issue</h3>
                                 <p className='text-[#A0A0A0] text-lg  font-medium'>Respond to the review with empathy. Let the customer know that you’ve read their feedback and you value their opinion.</p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

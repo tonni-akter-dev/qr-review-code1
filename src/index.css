@@ -65,6 +65,8 @@ body {
   height: 475px !important;
   background-image: linear-gradient(90deg, #FFDF00 0%, #FDCC0D 100%);
   border-radius: 30px !important;
+  position: relative;
+  z-index: 1;
 }
 
 .swiper-slide-active img,
@@ -187,10 +189,11 @@ video {
   .step1_card {
     margin-left: 0px !important;
   }
+
   .arrow_one {
     position: absolute !important;
     top: 30px !important;
-    right:-16px !important;
+    right: -16px !important;
   }
 
   .arrow_two {

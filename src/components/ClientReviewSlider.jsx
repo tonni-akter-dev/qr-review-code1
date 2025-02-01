@@ -9,7 +9,9 @@ import cr3 from '../assets/cr3.png';
 import cr4 from '../assets/cr4.png';
 import video1 from '../assets/video1.mp4';
 import play from '../assets/Play.svg';
+import effect from '../assets/effect.png';
 import { useRef, useState } from 'react';
+
 
 const ClientReviewSlider = () => {
     const videoRef = useRef(null);
@@ -32,10 +34,10 @@ const ClientReviewSlider = () => {
                 effect={'coverflow'}
                 grabCursor={true}
                 centeredSlides={true}
-                autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                }}
+                // autoplay={{
+                //     delay: 2500,
+                //     disableOnInteraction: false,
+                // }}
                 slidesPerView={3}
                 coverflowEffect={{
                     rotate: 0,
@@ -69,32 +71,20 @@ const ClientReviewSlider = () => {
                 pagination={false}
                 modules={[EffectCoverflow, Pagination, Autoplay]}
                 className="mySwiper">
+
+
                 <SwiperSlide>
-                    <div className="relative w-full h-full">
-                        {/* Image */}
-                        <img src={cr1} alt="slide_image" />
-                        {/* Text Overlay */}
-                        <div className="absolute inset-0 flex flex-col justify-end items-center bottom-5">
-                            <p className="text-white text-xl font-bold">Daniel Lee</p>
-                            <p className="text-[#222] text-base font-semibold">Brand name</p>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="relative w-full h-full">
-                        {/* Image */}
-                        <img src={cr2} alt="slide_image" />
-                        {/* Text Overlay */}
-                        <div className="absolute inset-0 flex flex-col justify-end items-center bottom-5">
-                            <p className="text-white text-xl font-bold">Daniel Lee</p>
-                            <p className="text-[#222] text-base font-semibold">Brand name</p>
-                        </div>
-                    </div>                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="relative  w-full h-full lg:rounded-[36px] rounded-lg ">
+                    <div className="relative w-full h-full lg:rounded-[36px] rounded-lg overflow-hidden">
+                        <div
+                            className="absolute inset-0 bg-no-repeat bg-top bg-cover "
+                            style={{ backgroundImage: `url(${effect})` }}
+                        ></div>
                         {!isPlaying && (
-                            <div onClick={handlePlay} className="absolute top-[40%] left-[45%] cursor-pointer z-40">
-                                <img className="!lg:w-12 !h-12 !p-0  " src={play} alt="Play" />
+                            <div
+                                onClick={handlePlay}
+                                className="absolute top-[40%] left-[40%] cursor-pointer z-30"
+                            >
+                                <img className="!lg:w-12 !h-12 !p-0" src={play} alt="Play" />
                             </div>
                         )}
                         <video
@@ -104,36 +94,31 @@ const ClientReviewSlider = () => {
                             loop
                             onPlay={() => setIsPlaying(true)}
                             onPause={() => setIsPlaying(false)}
-                            className="w-full h-full object-cover">
+                            className="w-full h-full object-cover rounded-[36px] z-10">
                             <source src={video1} type="video/mp4" />
                         </video>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="relative w-full h-full">
-                        {/* Image */}
-                        <img src={cr3} alt="slide_image" />
-                        {/* Text Overlay */}
-                        <div className="absolute inset-0 flex flex-col justify-end items-center bottom-5">
-                            <p className="text-white text-xl font-bold">Daniel Lee</p>
-                            <p className="text-[#222] text-base font-semibold">Brand name</p>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="relative w-full h-full">
-                        {/* Image */}
-                        <img src={cr4} alt="slide_image" />
-                        {/* Text Overlay */}
-                        <div className="absolute inset-0 flex flex-col justify-end items-center bottom-5">
-                            <p className="text-white text-xl font-bold">Daniel Lee</p>
-                            <p className="text-[#222] text-base font-semibold">Brand name</p>
-                        </div>
+
                     </div>
                 </SwiperSlide>
 
+                {[cr1, cr2, cr3, cr4].map((image, index) => (
+                    <SwiperSlide key={index}>
+                        <div className="relative w-full h-full lg:rounded-[36px] rounded-lg overflow-hidden">
+                            <div className="absolute inset-0 bg-no-repeat bg-top bg-cover opacity-80 z-10" style={{ backgroundImage: `url(${effect})` }}></div>
+                            <img className="w-full h-full object-cover rounded-[36px] z-20" src={image} alt="slide_image" />
+
+                            <div className="absolute inset-0 flex justify-center items-center z-30">
+                                <img className="!lg:w-12 !h-12 !p-0" src={play} alt="Play" />
+                            </div>
+                            <div className="absolute inset-0 flex flex-col justify-end items-center pb-5">
+                                <p className="text-white text-xl font-bold">Daniel Lee</p>
+                                <p className="text-[#222] text-base font-semibold">Brand name</p>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                ))}
             </Swiper>
-        </div >
+        </div>
     )
 }
 

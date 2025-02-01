@@ -3,7 +3,6 @@ import { superchargeData } from "../utils/data"
 import { RefContext } from "../utils/RefContext";
 
 const CustomerFeedback = () => {
-
     const [iconSize, setIconSize] = useState(window.innerWidth < 768 ? 27 : 40);
 
     useEffect(() => {
@@ -29,7 +28,7 @@ const CustomerFeedback = () => {
                                     {item.icon(iconSize)}
                                 </div>
                             </div>
-                            <h3 className="text-[#222] lg:text-[22px] text-sm font-bold text-center lg:mb-4 mb-2.5 lg:whitespace-nowrap lg:leading-[24px] leading-[15px]">{item.title}</h3>
+                            <h3 className="text-[#222] lg:text-[22px] text-sm font-bold text-center lg:mb-4 mb-2.5 lg:leading-[24px] leading-[15px]">{item.title}</h3>
                             <p className="text-[#A0A0A0] lg:text-base text-xs text-center">{item.description}</p>
                         </div>
                     ))}
