@@ -5,7 +5,7 @@ import x from '../assets/x.svg'
 import linkdin from '../assets/linkdin.svg'
 import { ArrowRightDoubleIcon, SentIcon } from 'hugeicons-react'
 
-const Footer = () => {
+const Footer = () => {;
   return (
     <div>
       <footer className="bg-[#222] text-white pt-[50px] pb-[70px]">

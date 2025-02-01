@@ -4,7 +4,7 @@ const PricingPage = () => {
             <h2 className="text-[#222]  lg:text-[30px] text-2xl font-extrabold leading-normal text-center lg:mb-3 mb-4">You getting Package Gold</h2>
             <p className="text-[#A0A0A0] mb-[30px] lg:text-lg text-sm font-semibold  text-center">Price: 500 BDT</p>
 
-            <div className="bg-white rounded-[20px] shadow_custom lg:py-[56px] py-6 lg:px-10 px-6">
+            <div className="max-w-[500px] w-full mx-auto bg-white rounded-[20px] shadow_custom lg:py-[56px] py-6 lg:px-10 px-6">
                 <form>
                     <div className="lg:mb-5 mb-4">
                         <label htmlFor="name" className="block text-[#222] text-base font-medium mb-2">Full Name</label>
