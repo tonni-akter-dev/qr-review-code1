@@ -16,7 +16,7 @@ const CustomerFeedback = () => {
 
 
     return (
-        <div ref={featureRef} className='lg:mt-[94px] mt-20 max-w-[1400px] lg:px-[120px] px-5 mx-auto'>
+        <div ref={featureRef} className='lg:mt-[94px] mt-20 max-w-[1400px] xl:px-[120px] lg:px-[50px] px-5 mx-auto'>
             <div>
                 <h2 className="text-[#222]  lg:text-[46px] text-2xl font-extrabold leading-normal text-center mb-4 ">Supercharge Your Customer Feedback Today!</h2>
                 <p className="text-[#A0A0A0] lg:mb-[56px] mb-6 lg:text-lg text-sm  text-center">Inspiring success through innovative solutions.</p>

@@ -37,8 +37,8 @@ const ClientReviewSlider = () => {
                 grabCursor={true}
                 centeredSlides={true}
                 autoplay={{
-                    // delay: 2500,
-                    // disableOnInteraction: false,
+                    delay: 2500,
+                    disableOnInteraction: false,
                 }}
                 slidesPerView={4}
                 coverflowEffect={{
@@ -109,8 +109,8 @@ const ClientReviewSlider = () => {
                             </div>
 
                             <div className="absolute inset-0 flex flex-col justify-end items-center pb-5">
-                                <p className="text-white text-xl font-bold">Daniel Lee</p>
-                                <p className="text-[#222] text-base font-semibold">Brand name</p>
+                                <p className="text-white lg:text-xl text-base font-bold">Daniel Lee</p>
+                                <p className="text-[#222] lg:text-base text-sm font-semibold">Brand name</p>
                             </div>
                         </div>
                     </SwiperSlide>

@@ -31,7 +31,7 @@ const Pricing = () => {
                 </div>
                 <p className="text-base text-[#222] ">USD</p>
             </div>
-            <div className="grid lg:grid-cols-3 gap-6 grid-cols-1">
+            <div className="grid xl:grid-cols-3 lg::grid-cols-2 md:grid-cols-2 gap-6 grid-cols-1">
                 {pricingData.map((card, index) => (
                     <PricingCard key={index} {...card} isBDT={isBDT} />
                 ))}

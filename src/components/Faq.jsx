@@ -13,7 +13,7 @@ export const Faq = () => {
 
 
   return (
-    <div className="lg:my-[100px] my-20 max-w-[1400px] lg:px-[120px] px-5 mx-auto">
+    <div className="lg:my-[100px] my-20 max-w-[1400px] xl:px-[120px] lg:px-[50px]  px-5 mx-auto">
       <h2 className="text-[#222]  lg:text-[46px] text-2xl font-extrabold leading-normal text-center mb-4">Frequently Asked Question</h2>
       <p className="text-[#A0A0A0] mb-[56px] lg:text-lg text-sm  text-center">A Frequently Asked Questions (FAQ) section provides quick answers to common inquiries,<br className="lg:flex hidden" /> helping users save time and find relevant information efficiently.</p>
       <div className="grid grid-cols-1 items-center gap-9 lg:grid-cols-2 ">

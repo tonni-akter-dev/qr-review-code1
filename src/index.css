@@ -113,7 +113,7 @@ body {
 }
 
 .swiper-slide img,
-video {
+.swiper-slide video {
   display: block;
   width: 350px;
   height: 430px;
@@ -148,6 +148,9 @@ video {
     height: 100% !important;
     border-radius: 10px !important;
     padding: 4px;
+  }
+  .swiper-slide-active .effect-bg {
+    margin: 4px !important;
   }
 
 }
@@ -256,3 +259,9 @@ video {
 
 
 /* slider */
+
+
+
+/* banner */
+
+/* banner */

@@ -6,7 +6,7 @@ const Contact = () => {
     const { contactRef } = useContext(RefContext);
 
     return (
-        <div ref={contactRef} className="lg:my-[100px] my-20 max-w-[1400px] lg:px-[120px] px-5 mx-auto">
+        <div ref={contactRef} className="lg:my-[100px] my-20 max-w-[1400px] xl:px-[120px] lg:px-[50px] px-5 mx-auto">
             <h2 className="text-[#222]  lg:text-[46px] text-2xl font-extrabold leading-normal text-center lg:mb-5 mb-4">{`Let's Get Started`}</h2>
             <p className="text-[#A0A0A0] mb-[56px] lg:text-lg text-sm  text-center">{`Ready to boost your reviews? We're here to help!`}</p>
             <div className=" px-4 lg:px-0">
@@ -50,44 +50,72 @@ const Contact = () => {
                     <div className=" flex flex-col gap-6 ">
                         <div className="border border-[#E5E5E5]  rounded-3xl lg:py-5 py-3.5 lg:ps-8 ps-[22px] flex gap-8 items-center">
                             <div className="lg:p-5 p-3.5 border border-[#E5E5E5] w-fit rounded-full">
-                                <Calling02Icon
-                                    size={24}
-                                    color={"#22222"}
-                                    variant={"stroke"}
-                                />
+                                <div className="lg:block hidden">
+                                    <Calling02Icon
+                                        size={24}
+                                        color={"#22222"}
+                                        variant={"stroke"}
+                                    />
+                                </div>
+                                <div className="lg:hidden block">
+                                    <Calling02Icon
+                                        size={18}
+                                        color={"#22222"}
+                                        variant={"stroke"}
+                                    />
+                                </div>
                             </div>
                             <div>
                                 <h3 className="lg:text-[22px] text-base font-bold lg:mb-4 mb-2.5">Phone Support</h3>
-                                <p className="text-[#A0A0A0] text-base">+1 (555) 123-4567</p>
-                                <p className="text-[#A0A0A0] text-base">Mon-Fri from 9am to 6pm</p>
+                                <p className="text-[#A0A0A0] lg:text-base text-xs">+1 (555) 123-4567</p>
+                                <p className="text-[#A0A0A0] lg:text-base text-xs">Mon-Fri from 9am to 6pm</p>
                             </div>
                         </div>
                         <div className="border border-[#E5E5E5]  rounded-3xl lg:py-5 py-3.5 lg:ps-8 ps-[22px] flex gap-8 items-center">
                             <div className="lg:p-5 p-3.5 border border-[#E5E5E5] w-fit rounded-full">
-                                <Mail01Icon
-                                    size={24}
-                                    color={"#22222"}
-                                    variant={"stroke"}
-                                />
+
+                                <div className="lg:block hidden">
+                                    <Mail01Icon
+                                        size={24}
+                                        color={"#22222"}
+                                        variant={"stroke"}
+                                    />
+                                </div>
+                                <div className="lg:hidden block">
+                                    <Mail01Icon
+                                        size={18}
+                                        color={"#22222"}
+                                        variant={"stroke"}
+                                    />
+                                </div>
                             </div>
                             <div>
                                 <h3 className="lg:text-[22px] text-base font-bold lg:mb-4 mb-2.5">Email</h3>
-                                <p className="text-[#A0A0A0] text-base">support@reviewsqr.com</p>
-                                <p className="text-[#A0A0A0] text-base">{`We'll respond within 24 hours`}</p>
+                                <p className="text-[#A0A0A0] lg:text-base text-xs">support@reviewsqr.com</p>
+                                <p className="text-[#A0A0A0] lg:text-base text-xs">{`We'll respond within 24 hours`}</p>
                             </div>
                         </div>
                         <div className="border border-[#E5E5E5]  rounded-3xl lg:py-5 py-3.5 lg:ps-8 ps-[22px] flex gap-8 items-center">
                             <div className="lg:p-5 p-3.5 border border-[#E5E5E5] w-fit rounded-full">
-                                <Chatting01Icon
-                                    size={24}
-                                    color={"#22222"}
-                                    variant={"stroke"}
-                                />
+                                <div className="lg:block hidden">
+                                    <Chatting01Icon
+                                        size={24}
+                                        color={"#22222"}
+                                        variant={"stroke"}
+                                    />
+                                </div>
+                                <div className="lg:hidden block">
+                                    <Chatting01Icon
+                                        size={18}
+                                        color={"#22222"}
+                                        variant={"stroke"}
+                                    />
+                                </div>
                             </div>
                             <div>
                                 <h3 className="lg:text-[22px] text-base font-bold lg:mb-4 mb-2.5">Live Chat</h3>
-                                <p className="text-[#A0A0A0] text-base">Available 24/7</p>
-                                <p className="text-[#A0A0A0] text-base">Instant support via WhatsApp</p>
+                                <p className="text-[#A0A0A0] lg:text-base text-xs">Available 24/7</p>
+                                <p className="text-[#A0A0A0] lg:text-base text-xs">Instant support via WhatsApp</p>
                             </div>
                         </div>
 

@@ -27,7 +27,7 @@ const Brands = () => {
       <h2 className="text-[#222] lg:text-[46px] text-2xl font-extrabold leading-normal text-center lg:mb-5 mb-4">
         Trusted by renowned brands
       </h2>
-      <p className="text-[#A0A0A0] mb-[56px] lg:text-lg text-sm text-center">
+      <p className="text-[#A0A0A0] lg:mb-[56px] mb-6 lg:text-lg text-sm text-center">
         Endorsed by industry-leading brands, our solutions are trusted worldwide for their quality <br className="lg:block hidden" /> and reliability.
       </p>
 

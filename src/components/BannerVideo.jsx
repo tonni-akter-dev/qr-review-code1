@@ -10,17 +10,20 @@ const BannerVideo = () => {
     const [isPlaying, setIsPlaying] = useState(false);
 
     const handlePlay = () => {
-        console.log('click');
         if (videoRef.current) {
-            videoRef.current.play();
-            setIsPlaying(true);
+            if (isPlaying) {
+                videoRef.current.pause();
+            } else {
+                videoRef.current.play();
+            }
+            setIsPlaying(!isPlaying);
         }
     };
 
     return (
         <div>
             <div className="relative rounded-3xl lg:mt-[58px] mt-6 bg-gradient-to-r from-[#FDCC0D] to-[#FF9529] max-w-[880px] w-full lg:h-[430px] h-[166px]">
-                <div className="relative lg:w-[880px] w-full h-full lg:rounded-[36px] rounded-lg ">
+                <div onClick={handlePlay} className="relative xl:w-[880px] lg:w-[700px] w-full h-full lg:rounded-[36px] rounded-lg ">
                     {!isPlaying && (
                         <div onClick={handlePlay} className="absolute top-[40%] left-[45%] cursor-pointer z-40">
                             <img className="lg:size-[78px] size-8" src={play} alt="Play" />
@@ -28,13 +31,12 @@ const BannerVideo = () => {
                     )}
                     <video
                         ref={videoRef}
-                        controls
                         muted
                         loop
                         onPlay={() => setIsPlaying(true)}
                         onPause={() => setIsPlaying(false)}
                         style={{ borderRadius: "24px", width: "100%", height: "100%", objectFit: "cover" }}
-                        className="rounded-3xl w-[880px]">
+                        className="rounded-3xl w-[880px] lg:p-3 p-2">
                         <source src={video1} type="video/mp4" />
                     </video>
 

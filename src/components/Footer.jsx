@@ -10,7 +10,7 @@ const Footer = () => {
     <div>
       <footer className="bg-[#222] text-white pt-[50px] pb-[70px]">
         <div className="mx-auto  max-w-[1400px] lg:px-[120px] px-5 overflow-hidden ">
-          <div className='flex flex-col lg:flex-row justify-between'>
+          <div className='flex flex-col xl:flex-row lg:flex-col lg:gap-10 xl:gap-0 justify-between'>
             <div>
               <img src={logo} className="w-[200px] h-[40px] mb-8" alt="logo" />
               <p className='text-[#A0A0A0]  text-base lg:w-[374px] mb-8 '>Transform your customer feedback into growth. Our smart QR system helps you collect more positive reviews while managing feedback professionally.</p>
