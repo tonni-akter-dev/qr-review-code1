@@ -21,9 +21,9 @@ const CustomerFeedback = () => {
                 <p className="text-[#A0A0A0] lg:mb-[56px] mb-6 lg:text-lg text-sm  text-center">Inspiring success through innovative solutions.</p>
                 <div className="grid lg:grid-cols-2  xl:grid-cols-4 grid-cols-2 xs:grid-cols-1 lg:gap-6 gap-5 lg:mb-9 mb-6">
                     {superchargeData.map((item, index) => (
-                        <div key={index} className="lg:p-6 p-4 rounded-[20px] group transition-all duration-300" style={{ backgroundColor: item.bg_color }}>
-                            <div className={`bg-${item.icon_bg}  mx-auto lg:p-5 p-[12px] w-fit rounded-full mb-6 flex justify-center items-center transition-transform duration-300 group-hover:rotate-180`} style={{ backgroundColor: item.icon_bg }}>
-                                <div >
+                        <div key={index} className="lg:p-6 p-4 rounded-[20px] " style={{ backgroundColor: item.bg_color }}>
+                            <div className={`bg-${item.icon_bg}  mx-auto lg:p-5 p-[12px] w-fit rounded-full mb-6 flex justify-center items-center group transition-all duration-300`} style={{ backgroundColor: item.icon_bg }}>
+                                <div className="transition-transform duration-300 group-hover:rotate-180">
                                     {item.icon(iconSize)}
                                 </div>
                             </div>

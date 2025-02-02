@@ -26,12 +26,12 @@ const Buisness = () => {
                     {buisnessData.map((item, index) => (
                         <div
                             key={index}
-                            className="h-[200px] lg:py-6 lg:px-5 px-4 py-4 rounded-[20px] group transition-all duration-300"
+                            className="h-[200px] lg:py-6 lg:px-5 px-4 py-4 rounded-[20px] "
                             style={{ backgroundColor: item.bg_color }}>
                             <div
-                                className={`bg-${item.icon_bg} mx-auto lg:p-5 p-[12px] w-fit rounded-full mb-6 flex justify-center items-center transition-transform duration-300 group-hover:rotate-180`}
+                                className={`bg-${item.icon_bg} group transition-all duration-300 mx-auto lg:p-5 p-[12px] w-fit rounded-full mb-6 flex justify-center items-center`}
                                 style={{ backgroundColor: item.icon_bg }}>
-                                <div>
+                                <div className="transition-transform duration-300 group-hover:rotate-180">
                                     {item.icon(iconSize)}
                                 </div>
                             </div>
