@@ -45,7 +45,7 @@ const Header = () => {
 
   return (
     <div className='fixed top-0 z-50 w-full bg-white'>
-      <div className='max-w-[1400px] lg:px-[120px] px-5 py-[25px] mx-auto '>
+      <div className='max-w-[1400px] lg:px-[120px] px-5 py-[20px] mx-auto '>
         <div className='flex justify-between items-center relative'>
           <Link to={'/'}>
             <img className='lg:w-[191px] w-[128px] lg:h-[50px] h-[33px] object-contain' src={logo} alt="" />

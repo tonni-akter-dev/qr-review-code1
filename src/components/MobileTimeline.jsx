@@ -24,7 +24,7 @@ const MobileTimeline = () => {
                     <img className='relative z-40 size-[52px]' src={step1} alt="" />
                 </div>
                 <div className='flex flex-col items-start gap-3 ms-10 step1_card'>
-                    <img className='w-[142px] h-[115px]' src={scan} alt="" />
+                    <img className='w-[142px] h-[115px] object-cover' src={scan} alt="" />
                     <div className='text-center max-w-[214px] bg-white shadow_custom p-2 w-full '>
                         <h3 className='text-base text-[#222] font-bold mb-1'>Scan & Access Menu</h3>
                         <p className='text-[#A0A0A0] text-xs'>Place a branded QR code on the restaurant table for customers to scan, message on WhatsApp, and instantly receive the menu PDF.</p>
@@ -39,7 +39,7 @@ const MobileTimeline = () => {
                     <img className='size-[52px]' src={step2} alt="" />
                 </div>
                 <div className='flex flex-col items-end gap-3 pt-5'>
-                    <img className='w-[161px] h-[116px]' src={gatherreviews} alt="" />
+                    <img className='w-[161px] h-[116px] object-cover' src={gatherreviews} alt="" />
                     <div className='text-center max-w-[214px] bg-white shadow_custom p-2 w-full '>
                         <h3 className='text-base text-[#222] font-bold mb-1'>Gather Reviews & Feedback</h3>
                         <p className='text-[#A0A0A0] text-xs'>Request user feedback, sending a Google review link for 4 or 5 ratings, and gathering details for average reviews to save and address.</p>
@@ -58,14 +58,14 @@ const MobileTimeline = () => {
                 </div>
                 <div className='flex justify-between'>
                     <div className='  flex flex-col text-center items-center gap-3 justify-center'>
-                        <img className='w-[177px] h-[116px]' src={goodreview} alt="" />
+                        <img className='w-[177px] h-[116px] object-cover' src={goodreview} alt="" />
                         <div className='max-w-[177px] p-2 w-full bg-white shadow_custom rounded-lg relative z-40'>
                             <h3 className='text-sm text-[#222] font-bold mb-1 leading-4'>Good Reviews & Feedback</h3>
                             <p className='text-[#A0A0A0] text-xs  font-medium'>For 4⭐ or 5⭐ reviews, thank customers for their positive feedback.</p>
                         </div>
                     </div>
                     <div className=' flex flex-col text-center items-center gap-3 justify-center'>
-                        <img className='w-[161px] h-[116px]' src={reviewsbads} alt="" />
+                        <img className='w-[161px] h-[116px] object-cover' src={reviewsbads} alt="" />
                         <div className='max-w-[177px] p-2 w-full  bg-white shadow_custom rounded-lg relative z-40'>
                             <h3 className='text-sm text-[#222] font-bold mb-1 leading-4'>Average/Bad Reviews & Feedback</h3>
                             <p className='text-[#A0A0A0] text-xs  font-medium'>Apologize and assure the customer their concerns are being addressed.</p>
@@ -78,7 +78,7 @@ const MobileTimeline = () => {
                 <div className='flex justify-between mt-[-100px]'>
                     <div className='  flex flex-col text-center items-center gap-3 justify-center'>
                         <img className='absolute top-[103px] z-10' src={arrow4} alt="" />
-                        <img className='w-[166px] h-[116px] mt-48' src={discount} alt="" />
+                        <img className='w-[166px] h-[116px] mt-48 object-cover' src={discount} alt="" />
                         <div className='max-w-[177px] p-2 w-full bg-white shadow_custom rounded-lg relative z-40'>
                             <h3 className='text-sm text-[#222] font-bold mb-1 leading-4'>Discount</h3>
                             <p className='text-[#A0A0A0] text-xs  font-medium'>Send a 10% discount coupon, valid for 30 days, and notify the restaurant to verify it via CRM.</p>
@@ -87,7 +87,7 @@ const MobileTimeline = () => {
 
                     <div className='  flex flex-col text-center items-center gap-3 justify-center'>
                         <img className='absolute top-[103px] z-10' src={arrow4} alt="" />
-                        <img className='w-[180px] h-[116px] mt-48' src={issuse} alt="" />
+                        <img className='w-[180px] h-[116px] mt-48 object-cover' src={issuse} alt="" />
                         <div className='max-w-[177px] p-2 w-full bg-white shadow_custom rounded-lg relative z-40 '>
                             <h3 className='text-sm text-[#222] font-bold mb-1 leading-4'>Acknowledge the Issue</h3>
                             <p className='text-[#A0A0A0] text-xs  font-medium'>WRespond to the review with empathy. Let the customer know that you’ve read their feedback and you value their opinion.</p>
@@ -100,7 +100,7 @@ const MobileTimeline = () => {
                 <div className='flex justify-between mt-[-100px]'>
                     <div className='  flex flex-col text-center items-center gap-3 justify-center'>
                         <img className='absolute top-[103px] z-10' src={arrow4} alt="" />
-                        <img className='w-[166px] h-[116px] mt-48' src={client} alt="" />
+                        <img className='w-[166px] h-[116px] mt-48 object-cover' src={client} alt="" />
                         <div className='max-w-[177px] p-2 w-full bg-white shadow_custom rounded-lg'>
                             <h3 className='text-sm text-[#222] font-bold mb-1 leading-4'>Happy Client</h3>
                             <p className='text-[#A0A0A0] text-xs  font-medium'>Thank you so much for the discount! I really appreciate how quickly you resolved my issue. I’ll definitely be visiting again soon!</p>
@@ -111,7 +111,7 @@ const MobileTimeline = () => {
 
                     <div className='  flex flex-col text-center items-center gap-3 justify-center'>
                         <img className='absolute top-[103px] z-10' src={arrow4} alt="" />
-                        <img className='w-[180px] h-[116px] mt-48' src={offer} alt="" />
+                        <img className='w-[180px] h-[116px] mt-48 object-cover' src={offer} alt="" />
                         <div className='max-w-[177px] p-2 w-full bg-white shadow_custom rounded-lg  '>
                             <h3 className='text-sm text-[#222] font-bold mb-1 leading-4'>Offer a Solution</h3>
                             <p className='text-[#A0A0A0] text-xs  font-medium'>We’re happy to offer you a 10% discount, valid for 30 days! Show it on your next visit, and we’ll verify it in our system. See you soon!</p>

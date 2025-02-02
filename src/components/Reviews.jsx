@@ -6,7 +6,7 @@ const Reviews = () => {
     return (
         <div>
             <div className="lg:mt-[100px] mt-20 max-w-[1400px]  px-5 mx-auto">
-                <div className="flex lg:flex-row flex-col items-center lg:gap-[65px]">
+                <div className="flex lg:flex-row lg:flex-wrap xl:flex-nowrap justify-center flex-col items-center lg:gap-[65px]">
                     <div className='lg:hidden flex flex-col justify-center items-center text-center'>
                         <h2 className=" text-2xl font-extrabold text-[#222] mb-4">
                             Elevate Reviews Effortlessly
@@ -88,9 +88,9 @@ const Reviews = () => {
                                 </div>
                             </div>
 
-                        </div> {/* End Features List */}
+                        </div> 
+                        {/* End Features List */}
                     </div>
-
                 </div>
             </div>
         </div>)

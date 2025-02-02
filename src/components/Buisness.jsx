@@ -1,6 +1,6 @@
 import { RefContext } from "../utils/RefContext";
 import { buisnessData } from "../utils/data"
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
 const Buisness = () => {
 
@@ -22,7 +22,7 @@ const Buisness = () => {
             <div>
                 <h2 className="text-[#222]  lg:text-[46px] text-2xl font-extrabold leading-normal text-center mb-4">Best suits for Business</h2>
                 <p className="text-[#A0A0A0] lg:mb-[56px] mb-6 lg:text-lg text-sm  text-center">Empower your business with tools to collect, manage, and reward customer feedback effortlessly.</p>
-                <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-6 gap-5 mb-9">
+                <div className="grid lg:grid-cols-2  xl:grid-cols-4 grid-cols-2 xs:grid-cols-1 lg:gap-6 gap-5 mb-9">
                     {buisnessData.map((item, index) => (
                         <div
                             key={index}
